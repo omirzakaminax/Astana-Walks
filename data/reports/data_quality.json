@@ -1,0 +1,777 @@
+{
+ "data_quality": {
+  "synthetic": false,
+  "schema_version": 1,
+  "collected_at_latest": "2026-10-20T06:40:10+00:00",
+  "areas": [
+   {
+    "kind": null,
+    "center": {
+     "lat": 51.089,
+     "lon": 71.416
+    },
+    "radius_m": 2500,
+    "collected_at": "2026-10-19T15:51:19+00:00",
+    "raw_elements": 112,
+    "kept": 72,
+    "added": null
+   },
+   {
+    "kind": null,
+    "center": {
+     "lat": 51.129,
+     "lon": 71.42
+    },
+    "radius_m": 2500,
+    "collected_at": "2026-10-19T16:00:12+00:00",
+    "raw_elements": 359,
+    "kept": 150,
+    "added": 150
+   },
+   {
+    "kind": "area",
+    "center": {
+     "lat": 51.089,
+     "lon": 71.416
+    },
+    "radius_m": 2500,
+    "collected_at": "2026-10-19T17:46:58+00:00",
+    "raw_elements": 114,
+    "kept": 72,
+    "added": -2
+   },
+   {
+    "kind": "area",
+    "center": {
+     "lat": 51.129,
+     "lon": 71.42
+    },
+    "radius_m": 2500,
+    "collected_at": "2026-10-19T17:48:19+00:00",
+    "raw_elements": 363,
+    "kept": 150,
+    "added": 3
+   },
+   {
+    "kind": "area",
+    "center": {
+     "lat": 51.165,
+     "lon": 71.43
+    },
+    "radius_m": 2500,
+    "collected_at": "2026-10-19T17:49:37+00:00",
+    "raw_elements": 380,
+    "kept": 150,
+    "added": 150
+   },
+   {
+    "kind": "landmarks",
+    "center": {
+     "lat": 51.089,
+     "lon": 71.416
+    },
+    "radius_m": null,
+    "collected_at": "2026-10-19T17:50:21+00:00",
+    "raw_elements": 44,
+    "kept": 44,
+    "added": 15
+   },
+   {
+    "kind": "area",
+    "center": {
+     "lat": 51.089,
+     "lon": 71.416
+    },
+    "radius_m": 2500,
+    "collected_at": "2026-10-19T18:06:56+00:00",
+    "raw_elements": 114,
+    "kept": 72,
+    "added": 0
+   },
+   {
+    "kind": "area",
+    "center": {
+     "lat": 51.129,
+     "lon": 71.42
+    },
+    "radius_m": 2500,
+    "collected_at": "2026-10-19T18:08:17+00:00",
+    "raw_elements": 363,
+    "kept": 150,
+    "added": 0
+   },
+   {
+    "kind": "area",
+    "center": {
+     "lat": 51.165,
+     "lon": 71.43
+    },
+    "radius_m": 2500,
+    "collected_at": "2026-10-19T18:09:32+00:00",
+    "raw_elements": 380,
+    "kept": 150,
+    "added": 0
+   },
+   {
+    "kind": "landmarks",
+    "center": {
+     "lat": 51.089,
+     "lon": 71.416
+    },
+    "radius_m": null,
+    "collected_at": "2026-10-19T18:10:17+00:00",
+    "raw_elements": 44,
+    "kept": 44,
+    "added": 0
+   },
+   {
+    "kind": "area",
+    "center": {
+     "lat": 51.089,
+     "lon": 71.416
+    },
+    "radius_m": 2500,
+    "collected_at": "2026-10-20T06:06:48+00:00",
+    "raw_elements": 114,
+    "kept": 72,
+    "added": 0
+   },
+   {
+    "kind": "area",
+    "center": {
+     "lat": 51.129,
+     "lon": 71.42
+    },
+    "radius_m": 2500,
+    "collected_at": "2026-10-20T06:07:50+00:00",
+    "raw_elements": 363,
+    "kept": 150,
+    "added": 0
+   },
+   {
+    "kind": "area",
+    "center": {
+     "lat": 51.165,
+     "lon": 71.43
+    },
+    "radius_m": 2500,
+    "collected_at": "2026-10-20T06:09:01+00:00",
+    "raw_elements": 380,
+    "kept": 150,
+    "added": 0
+   },
+   {
+    "kind": "landmarks",
+    "center": {
+     "lat": 51.089,
+     "lon": 71.416
+    },
+    "radius_m": null,
+    "collected_at": "2026-10-20T06:09:46+00:00",
+    "raw_elements": 44,
+    "kept": 44,
+    "added": 0
+   },
+   {
+    "kind": "landmarks",
+    "center": {
+     "lat": 51.089,
+     "lon": 71.416
+    },
+    "radius_m": null,
+    "collected_at": "2026-10-20T06:40:10+00:00",
+    "raw_elements": 204,
+    "kept": 201,
+    "added": 114
+   }
+  ],
+  "places": 502,
+  "skipped_on_load": {},
+  "merged_on_load": 0,
+  "merges_by_reason": {},
+  "merge_examples": [],
+  "categories": {
+   "cafe": 99,
+   "restaurant": 86,
+   "fast_food": 54,
+   "mall": 50,
+   "artwork": 44,
+   "park": 37,
+   "playground": 25,
+   "worship": 17,
+   "attraction": 16,
+   "sports": 12,
+   "theatre": 9,
+   "museum": 8,
+   "campus": 7,
+   "library": 7,
+   "arts_centre": 6,
+   "stadium": 6,
+   "cinema": 5,
+   "fountain": 4,
+   "ice_cream": 4,
+   "gallery": 2,
+   "theme_park": 2,
+   "other": 1,
+   "zoo": 1
+  },
+  "linked_to_wikipedia_or_wikidata": 21,
+  "opening_hours": {
+   "with_raw_text": 138,
+   "parseable_by_our_parser": 131,
+   "missing": 364
+  },
+  "wheelchair_tag": {
+   "not tagged": 468,
+   "yes": 24,
+   "limited": 5,
+   "no": 5
+  },
+  "media": {
+   "with_photo": 14,
+   "with_description": 21,
+   "wikidata_identity": {}
+  },
+  "freshness_note": "collected_at is when the data was DOWNLOADED from OpenStreetMap. It does not mean opening hours or other details were verified on that date."
+ },
+ "naming": {
+  "places": 502,
+  "generated_names": 24,
+  "display_name_source_by_language": {
+   "kk": {
+    "original": 419,
+    "osm": 59
+   },
+   "ru": {
+    "original": 362,
+    "osm": 116
+   },
+   "en": {
+    "original": 383,
+    "osm": 95
+   }
+  },
+  "english_original_name_fallback": 197,
+  "english_with_descriptive_translation": 6,
+  "records_with_legacy_unverified_names": 13,
+  "unresolved_english_examples": [
+   {
+    "id": "osm:node/12093489321",
+    "name": "Дареджани",
+    "category": "restaurant",
+    "descriptive_translation": null,
+    "pronunciation_aid": "Daredzhani"
+   },
+   {
+    "id": "osm:way/1456208624",
+    "name": "Бейбітшілік пен Келісім аллеясы",
+    "category": "park",
+    "descriptive_translation": null,
+    "pronunciation_aid": "Beybitshilik pen Kelisim alleyasy"
+   },
+   {
+    "id": "osm:node/12520559591",
+    "name": "Лепим и варим",
+    "category": "cafe",
+    "descriptive_translation": null,
+    "pronunciation_aid": "Lepim i varim"
+   },
+   {
+    "id": "osm:node/10211901020",
+    "name": "Тануки",
+    "category": "restaurant",
+    "descriptive_translation": null,
+    "pronunciation_aid": "Tanuki"
+   },
+   {
+    "id": "osm:node/6408255389",
+    "name": "завтрак бар",
+    "category": "cafe",
+    "descriptive_translation": null,
+    "pronunciation_aid": "zavtrak Bar"
+   },
+   {
+    "id": "osm:node/4908968226",
+    "name": "Казахская национальная академия хореографии",
+    "category": "campus",
+    "descriptive_translation": null,
+    "pronunciation_aid": "Kazakhskaya natsionalnaya akademiya khoreografii"
+   },
+   {
+    "id": "osm:node/13681674667",
+    "name": "Лето",
+    "category": "cafe",
+    "descriptive_translation": null,
+    "pronunciation_aid": "Leto"
+   },
+   {
+    "id": "osm:node/5878515487",
+    "name": "Жуссан",
+    "category": "restaurant",
+    "descriptive_translation": null,
+    "pronunciation_aid": "Zhussan"
+   },
+   {
+    "id": "osm:node/5878572885",
+    "name": "Семейное кафе бум",
+    "category": "cafe",
+    "descriptive_translation": null,
+    "pronunciation_aid": "Semeynoe Cafe Boom"
+   },
+   {
+    "id": "osm:node/5878503586",
+    "name": "Қазақ еліне мың алғыс",
+    "category": "artwork",
+    "descriptive_translation": null,
+    "pronunciation_aid": "Qazaq eline myng algys"
+   },
+   {
+    "id": "osm:way/1462136136",
+    "name": "Тайқазан",
+    "category": "fountain",
+    "descriptive_translation": null,
+    "pronunciation_aid": "Tayqazan"
+   },
+   {
+    "id": "osm:node/12049030101",
+    "name": "ШашлычОк",
+    "category": "fast_food",
+    "descriptive_translation": null,
+    "pronunciation_aid": "ShashlychOk"
+   },
+   {
+    "id": "osm:way/419217546",
+    "name": "Қазақстан Республикасының Ұлттық Қорғаныс Университеті",
+    "category": "campus",
+    "descriptive_translation": null,
+    "pronunciation_aid": "Qazaqstan Respublikasynyng Ulttyq Qorganys Universiteti"
+   },
+   {
+    "id": "osm:relation/20321069",
+    "name": "Макет ракеты-носителя Зенит",
+    "category": "artwork",
+    "descriptive_translation": null,
+    "pronunciation_aid": "Maket rakety-nositelya Zenit"
+   },
+   {
+    "id": "osm:relation/20321070",
+    "name": "Макет ракеты-носителя Протон",
+    "category": "artwork",
+    "descriptive_translation": null,
+    "pronunciation_aid": "Maket rakety-nositelya Proton"
+   },
+   {
+    "id": "osm:way/734476104",
+    "name": "Буран",
+    "category": "artwork",
+    "descriptive_translation": null,
+    "pronunciation_aid": "Buran"
+   },
+   {
+    "id": "osm:node/13088473063",
+    "name": "\"Астана Жұлдызы\" Ескерткіші",
+    "category": "artwork",
+    "descriptive_translation": null,
+    "pronunciation_aid": "\"Astana Zhuldyzy\" Eskertkishi"
+   },
+   {
+    "id": "osm:node/2388707906",
+    "name": "Астана-Экспо КС",
+    "category": "gallery",
+    "descriptive_translation": null,
+    "pronunciation_aid": "Astana-EXPO KS"
+   },
+   {
+    "id": "osm:node/2671060738",
+    "name": "Избушка",
+    "category": "cafe",
+    "descriptive_translation": null,
+    "pronunciation_aid": "Izbushka"
+   },
+   {
+    "id": "osm:node/2671060739",
+    "name": "Дастархан",
+    "category": "cafe",
+    "descriptive_translation": null,
+    "pronunciation_aid": "Dastarkhan"
+   },
+   {
+    "id": "osm:node/4953253121",
+    "name": "Саксаул",
+    "category": "restaurant",
+    "descriptive_translation": null,
+    "pronunciation_aid": "Saksaul"
+   },
+   {
+    "id": "osm:way/230358854",
+    "name": "Сквер",
+    "category": "park",
+    "descriptive_translation": null,
+    "pronunciation_aid": "Skver"
+   },
+   {
+    "id": "osm:node/4506675474",
+    "name": "IMAX Кинопарк7",
+    "category": "cinema",
+    "descriptive_translation": null,
+    "pronunciation_aid": "IMAX Kinopark7"
+   },
+   {
+    "id": "osm:node/12520559589",
+    "name": "Лепим и варим",
+    "category": "cafe",
+    "descriptive_translation": null,
+    "pronunciation_aid": "Lepim i varim"
+   },
+   {
+    "id": "osm:node/4594452990",
+    "name": "йога-центр \"натарадж\"",
+    "category": "sports",
+    "descriptive_translation": null,
+    "pronunciation_aid": "yoga-Centre \"nataradzh\""
+   },
+   {
+    "id": "osm:node/3404172551",
+    "name": "Кишлак",
+    "category": "restaurant",
+    "descriptive_translation": null,
+    "pronunciation_aid": "Kishlak"
+   },
+   {
+    "id": "osm:node/14087643081",
+    "name": "Жылқылар үйірі",
+    "category": "attraction",
+    "descriptive_translation": null,
+    "pronunciation_aid": "Zhylqylar uyiri"
+   },
+   {
+    "id": "osm:node/12959449801",
+    "name": "Культура Диктует",
+    "category": "cafe",
+    "descriptive_translation": null,
+    "pronunciation_aid": "Kultura Diktuet"
+   },
+   {
+    "id": "osm:node/4133836392",
+    "name": "Дастаркан",
+    "category": "cafe",
+    "descriptive_translation": null,
+    "pronunciation_aid": "Dastarkan"
+   },
+   {
+    "id": "osm:node/13340040665",
+    "name": "Жетігенші",
+    "category": "artwork",
+    "descriptive_translation": null,
+    "pronunciation_aid": "Zhetigenshi"
+   },
+   {
+    "id": "osm:node/13340040666",
+    "name": "Қобызшы",
+    "category": "artwork",
+    "descriptive_translation": null,
+    "pronunciation_aid": "Qobyzshy"
+   },
+   {
+    "id": "osm:way/1470780026",
+    "name": "Дубовая аллея",
+    "category": "park",
+    "descriptive_translation": null,
+    "pronunciation_aid": "Dubovaya Alley"
+   },
+   {
+    "id": "osm:way/258753491",
+    "name": "Әнші субұрқақтар",
+    "category": "fountain",
+    "descriptive_translation": null,
+    "pronunciation_aid": "Anshi suburqaqtar"
+   },
+   {
+    "id": "osm:node/5936655589",
+    "name": "Мост",
+    "category": "restaurant",
+    "descriptive_translation": null,
+    "pronunciation_aid": "Most"
+   },
+   {
+    "id": "osm:node/11443113045",
+    "name": "ЧебурекМи",
+    "category": "fast_food",
+    "descriptive_translation": null,
+    "pronunciation_aid": "CheburekMi"
+   },
+   {
+    "id": "osm:node/5593300634",
+    "name": "Чир Chic",
+    "category": "restaurant",
+    "descriptive_translation": null,
+    "pronunciation_aid": "Chir Chic"
+   },
+   {
+    "id": "osm:way/734514013",
+    "name": "Сызықтық саябақ",
+    "category": "park",
+    "descriptive_translation": null,
+    "pronunciation_aid": "Syzyqtyq sayabaq"
+   },
+   {
+    "id": "osm:node/4915119663",
+    "name": "Арай",
+    "category": "restaurant",
+    "descriptive_translation": null,
+    "pronunciation_aid": "Aray"
+   },
+   {
+    "id": "osm:node/5244250150",
+    "name": "Рахат",
+    "category": "restaurant",
+    "descriptive_translation": null,
+    "pronunciation_aid": "Rakhat"
+   },
+   {
+    "id": "osm:node/11345949808",
+    "name": "Синяя волна",
+    "category": "fast_food",
+    "descriptive_translation": null,
+    "pronunciation_aid": "Sinyaya volna"
+   },
+   {
+    "id": "osm:node/4108293490",
+    "name": "Тайказан",
+    "category": "cafe",
+    "descriptive_translation": null,
+    "pronunciation_aid": "Taykazan"
+   },
+   {
+    "id": "osm:node/12049030095",
+    "name": "ШашлычОк",
+    "category": "fast_food",
+    "descriptive_translation": null,
+    "pronunciation_aid": "ShashlychOk"
+   },
+   {
+    "id": "osm:node/13333409377",
+    "name": "Махтумкули Фраги",
+    "category": "artwork",
+    "descriptive_translation": null,
+    "pronunciation_aid": "Makhtumkuli Fragi"
+   },
+   {
+    "id": "osm:node/13760723564",
+    "name": "Чайхана",
+    "category": "cafe",
+    "descriptive_translation": null,
+    "pronunciation_aid": "Chaykhana"
+   },
+   {
+    "id": "osm:node/12917116702",
+    "name": "Рыба пила",
+    "category": "restaurant",
+    "descriptive_translation": null,
+    "pronunciation_aid": "Ryba pila"
+   },
+   {
+    "id": "osm:node/13340050452",
+    "name": "Хатико",
+    "category": "artwork",
+    "descriptive_translation": null,
+    "pronunciation_aid": "Khatiko"
+   },
+   {
+    "id": "osm:node/12179661909",
+    "name": "Шашлычок",
+    "category": "fast_food",
+    "descriptive_translation": null,
+    "pronunciation_aid": "Shashlychok"
+   },
+   {
+    "id": "osm:way/499328449",
+    "name": "Астана балет",
+    "category": "theatre",
+    "descriptive_translation": null,
+    "pronunciation_aid": "Astana balet"
+   },
+   {
+    "id": "osm:way/1449322337",
+    "name": "НЛО",
+    "category": "attraction",
+    "descriptive_translation": null,
+    "pronunciation_aid": "NLO"
+   },
+   {
+    "id": "osm:way/1449322338",
+    "name": "Ұшатын автобус",
+    "category": "attraction",
+    "descriptive_translation": null,
+    "pronunciation_aid": "Ushatyn avtobus"
+   },
+   {
+    "id": "osm:way/1449322339",
+    "name": "Динопарк",
+    "category": "attraction",
+    "descriptive_translation": null,
+    "pronunciation_aid": "Dinopark"
+   },
+   {
+    "id": "osm:way/1449322340",
+    "name": "Электронды көліктер",
+    "category": "attraction",
+    "descriptive_translation": null,
+    "pronunciation_aid": "Elektrondy kolikter"
+   },
+   {
+    "id": "osm:way/1449322329",
+    "name": "Конвой",
+    "category": "attraction",
+    "descriptive_translation": null,
+    "pronunciation_aid": "Konvoy"
+   },
+   {
+    "id": "osm:way/1449317691",
+    "name": "Лепим и варим",
+    "category": "cafe",
+    "descriptive_translation": null,
+    "pronunciation_aid": "Lepim i varim"
+   },
+   {
+    "id": "osm:way/240909210",
+    "name": "Сарыарқа",
+    "category": "mall",
+    "descriptive_translation": null,
+    "pronunciation_aid": "Saryarqa"
+   },
+   {
+    "id": "osm:way/1449301389",
+    "name": "Намазхана",
+    "category": "worship",
+    "descriptive_translation": null,
+    "pronunciation_aid": "Namazkhana"
+   },
+   {
+    "id": "osm:way/240909219",
+    "name": "Алаша",
+    "category": "restaurant",
+    "descriptive_translation": null,
+    "pronunciation_aid": "Alasha"
+   },
+   {
+    "id": "osm:node/5764228295",
+    "name": "Тифлисъ",
+    "category": "restaurant",
+    "descriptive_translation": null,
+    "pronunciation_aid": "Tiflis"
+   },
+   {
+    "id": "osm:node/4913160607",
+    "name": "Меруерт",
+    "category": "restaurant",
+    "descriptive_translation": null,
+    "pronunciation_aid": "Meruert"
+   },
+   {
+    "id": "osm:way/158630906",
+    "name": "Тамсан",
+    "category": "cafe",
+    "descriptive_translation": null,
+    "pronunciation_aid": "Tamsan"
+   }
+  ],
+  "legacy_examples": [
+   {
+    "id": "osm:relation/20321069",
+    "name": "Макет ракеты-носителя Зенит",
+    "legacy_names": [
+     "Макет ракеты-носителя Союз"
+    ]
+   },
+   {
+    "id": "osm:node/5936674486",
+    "name": "York food",
+    "legacy_names": [
+     "Coffee&food"
+    ]
+   },
+   {
+    "id": "osm:way/499328514",
+    "name": "Mega Silk Way",
+    "legacy_names": [
+     "Mega SilkWay Astana",
+     "Мега Силк Вей"
+    ]
+   },
+   {
+    "id": "osm:way/549307755",
+    "name": "Мәңгілік Ел салтанат қақпасы",
+    "legacy_names": [
+     "Мәңгілік ел қақпасы"
+    ]
+   },
+   {
+    "id": "osm:node/4916060859",
+    "name": "М.В. Ломоносов атындағы Мәскеу мемлекеттік университеті Қазақстан филиалы",
+    "legacy_names": [
+     "Қазақстан Республикасының Ауыл шаруашылығы министрлігі",
+     "Ministry of Agriculture"
+    ]
+   },
+   {
+    "id": "osm:node/5880883095",
+    "name": "Hilton Astana",
+    "legacy_names": [
+     "Хилтон Астана"
+    ]
+   },
+   {
+    "id": "osm:way/1460537088",
+    "name": "Astana Musical",
+    "legacy_names": [
+     "Қазақстан Орталық концерт залы",
+     "Центральный концертный зал «Казахстан»"
+    ]
+   },
+   {
+    "id": "osm:way/1460700597",
+    "name": "Атамекен Қазақстан картасы этно-мемориалдық кешені",
+    "legacy_names": [
+     "Атамекен (мұражай)",
+     "Atameken miniature park"
+    ]
+   },
+   {
+    "id": "osm:way/166265821",
+    "name": "Сарыарқа",
+    "legacy_names": [
+     "Republican Cycling Track"
+    ]
+   },
+   {
+    "id": "osm:way/762780007",
+    "name": "Abu Dhabi Plaza",
+    "legacy_names": [
+     "Абу-Даби Плаза"
+    ]
+   },
+   {
+    "id": "osm:way/917478479",
+    "name": "Астана Опера",
+    "legacy_names": [
+     "Астана Опера (театр)"
+    ]
+   },
+   {
+    "id": "osm:node/4894937300",
+    "name": "Қазақстан Республикасының Ұлттық Мұражайы",
+    "legacy_names": [
+     "Қазақстан Республикасының Ұлттық музейі"
+    ]
+   },
+   {
+    "id": "osm:way/502046662",
+    "name": "«Ататүрік» саябағы",
+    "legacy_names": [
+     "Park Ataturk"
+    ]
+   }
+  ]
+ }
+}

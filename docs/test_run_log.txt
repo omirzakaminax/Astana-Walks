@@ -1,0 +1,93 @@
+Astana Walks — test run log (build environment, 2026-10-20T16:02Z, version 5.2)
+Python 3.13.16, Node v22.22.0
+
+== python -m unittest discover -s tests (synthetic data, fake model, fixed clock)
+Ran 178 tests in 1.479s
+
+OK
+
+== node tests/js/plan_test.js
+plan.js tests passed: 12
+
+== tests/e2e/browser_check.py (headless Chromium, SYNTHETIC data, FAKE model, Leaflet stub)
+PASS picker: suggestions shown on focus
+PASS picker: no duplicate places
+PASS picker: Mega Silk Way listed once
+PASS picker: listbox semantics
+PASS picker: a case ending is tolerated (Байтерека)
+PASS picker: Latin spelling finds a Cyrillic-named place
+PASS picker: keyboard selection
+PASS picker: honest no-match message
+PASS picker: Escape restores the chosen start
+PASS language switch updates the start name from sourced names
+PASS en picker: Kazakh-only name kept original with an English type (no fake English)
+PASS English: interest chips in English
+PASS map pick: click fills editable coordinates
+PASS plan rendered with cards
+PASS timeline stops == cards (one canonical plan)
+PASS cards numbered in plan order
+PASS pace shown
+PASS deadline countdown shown
+PASS replace: honest 'no replacement' message
+PASS closed: replaced or visibly marked
+PASS remove: one card fewer
+PASS fresh plan for export checks
+PASS about: description shown with a source badge
+PASS about: HTML in descriptions is not rendered
+PASS photo: figure with licence credit created
+PASS photo: an image that fails to load is hidden, not shown broken
+PASS copy: plan text in clipboard
+PASS copy: no coordinates by default
+PASS save: offline HTML without scripts or external resources
+PASS save: user/model text escaped
+PASS bingo: progress counts self-reported completion
+PASS surprise: works without text (or says honestly that nothing fits)
+PASS another surprise: different plan or honest exhaustion
+PASS group: two people by default
+PASS group: add a third person
+PASS group: coverage explained
+PASS solo: group rows removed
+PASS solo: no stale group coverage
+PASS past deadline: clear localized error
+PASS clarify: conflicting start is asked about, not silently used
+PASS clarify: 'keep' plans from the selected start
+PASS directions: per-stop Google Maps walking link
+PASS directions: whole route link with waypoints when there are 2+ stops
+PASS directions: opened only by a click (no auto-open)
+PASS styles: alternatives shown with comparable numbers
+PASS styles: switching keeps one canonical plan
+PASS walk: panel shown with self-reported note
+PASS walk: remaining walk recalculated
+PASS walk: the way back still ends at the ORIGINAL start
+PASS report: saved locally and counted
+PASS report: JSON has the POI ID and no coordinates or query
+PASS report: deleted
+PASS language switch: card, route and export names agree
+PASS language switch: offers to regenerate the AI text
+PASS no plan: reasons and one-click changes shown
+PASS model failure: actionable message + retry + labelled no-AI option + search-only list
+PASS app choice: plan shown and clearly labelled as chosen without AI
+PASS cancel: request cancelled and the late answer ignored
+PASS 02_kk_dark: no raw translation keys
+PASS 02_kk_dark: no horizontal scroll
+PASS 02_kk_dark: no JS errors
+PASS 03_en_vision: no raw translation keys
+PASS en: every Cyrillic card name is labelled as the original name with an English type
+PASS 03_en_vision: no horizontal scroll
+PASS 03_en_vision: no JS errors
+PASS 04_ru_phone: no raw translation keys
+PASS 04_ru_phone: no horizontal scroll
+PASS 04_ru_phone: no JS errors
+PASS no JavaScript errors in main session
+
+69/69 browser checks passed
+
+== eval/run_eval.py --data tests/e2e/e2e_pois.json --now 2026-10-21T14:30 (SYNTHETIC, NO MODEL)
+[fixture-synthetic-lexical-nomodel] {"queries": 33, "hit_at_5_category": {"value": 0.731, "n": 26}, "hit_at_5_named_place": {"value": 1.0, "n": 1}, "named_place_found_in_dataset": {"value": 0.667, "n": 3}, "named_place_unreachable_and_explained": {"value": 1.0, "n": 1}, "hit_at_5_poi_labels": {"value": null, "n": 0}, "clarification_correct": {"value": 1.0, "n": 1}, "unknown_attributes_reported": {"value": 1.0, "n": 4}, "plans_with_hard_constraint_violations": {"value": 0, "n": 33}, "empty_no_feasible_place_with_suggestions": {"value": 9, "n": 9}, "empty_because_model_failed": {"value": 0, "codes": [], "queries": []}, "hit5_not_applicable_hard_filter": ["en09"], "starts": {"named_dataset_place": 33, "simulated_coordinates": 0}, "notices_ok": {"value": 1.0, "n": 1}, "names_in_all_languages": {"value": 1.0, "n": 33}, "replacement_kept_others": [], "walk_replan": [], "styles": [{"alternatives": 2, "expected_at_least": 1, "stat
+
+Real data / real model: measured by the user on 2026-10-20 (v5.0 and v5.1), see docs/EVALUATION.md. Version 5.2 fixes NOT re-measured on real data or the real model.
+
+== v6 Discover (2026-10-20, build environment)
+python -m unittest discover -s tests                       -> Ran 179 tests, OK
+python tests/e2e/browser_check.py http://127.0.0.1:8765    -> 77/77 browser checks passed (synthetic data + FAKE model + stand-in image)
+Real photos / real data: not tested here; the gallery uses the photos from the user's enrich_wiki.py run.

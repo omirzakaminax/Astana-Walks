@@ -1,0 +1,13 @@
+{
+  "about": "Reviewed name corrections, keyed by the stable POI ID (osm:node/123). Every entry needs the exact OSM ID, a source URL that confirms the name for THIS place, and the review date. kind: official_name | common_name | translated_description. Entries without a valid source_url or reviewed date are ignored. See docs/NAMING.md.",
+  "example_not_active": {
+    "id": "osm:way/000000000",
+    "lang": "en",
+    "text": "Example Bridge",
+    "kind": "common_name",
+    "source_url": "https://en.wikipedia.org/wiki/Example",
+    "reviewed": "2026-10-20",
+    "note": "Copy into the overrides list only after checking the ID on openstreetmap.org and the source."
+  },
+  "overrides": []
+}
