@@ -1,0 +1,283 @@
+{
+ "meta": {
+  "title": "SYNTHETIC TEST FIXTURE — NOT REAL DATA",
+  "source": "hand-made test fixture",
+  "is_synthetic": true,
+  "collected_at": "2026-10-19T00:00:00+00:00",
+  "count": 12
+ },
+ "pois": [
+  {
+   "id": "fixture:1",
+   "source": "SYNTHETIC TEST FIXTURE (not real data)",
+   "source_url": "https://example.invalid/fixture/1",
+   "name": "Synthetic Cafe Alpha",
+   "name_is_generated": false,
+   "names": {},
+   "lat": 51.091,
+   "lon": 71.417,
+   "category": "cafe",
+   "osm_tags": {
+    "amenity": "cafe",
+    "cuisine": "coffee_shop"
+   },
+   "opening_hours": "24/7",
+   "contacts": {},
+   "description": "SYNTHETIC fixture cafe.",
+   "description_source": "summary_of_osm_tags",
+   "collected_at": "2026-10-19T00:00:00+00:00"
+  },
+  {
+   "id": "fixture:2",
+   "source": "SYNTHETIC TEST FIXTURE (not real data)",
+   "source_url": "https://example.invalid/fixture/2",
+   "name": "Synthetic Coffee Beta",
+   "name_is_generated": false,
+   "names": {},
+   "lat": 51.093,
+   "lon": 71.414,
+   "category": "cafe",
+   "osm_tags": {
+    "amenity": "cafe",
+    "internet_access": "wlan"
+   },
+   "opening_hours": "Mo-Su 09:00-21:00",
+   "contacts": {},
+   "description": "SYNTHETIC fixture cafe.",
+   "description_source": "summary_of_osm_tags",
+   "collected_at": "2026-10-19T00:00:00+00:00"
+  },
+  {
+   "id": "fixture:3",
+   "source": "SYNTHETIC TEST FIXTURE (not real data)",
+   "source_url": "https://example.invalid/fixture/3",
+   "name": "Synthetic Cafe Gamma (odd hours)",
+   "name_is_generated": false,
+   "names": {},
+   "lat": 51.092,
+   "lon": 71.419,
+   "category": "cafe",
+   "osm_tags": {
+    "amenity": "cafe"
+   },
+   "opening_hours": "Mo-Fr 08:00-20:00; PH off",
+   "contacts": {},
+   "description": "SYNTHETIC fixture cafe.",
+   "description_source": "summary_of_osm_tags",
+   "collected_at": "2026-10-19T00:00:00+00:00"
+  },
+  {
+   "id": "fixture:4",
+   "source": "SYNTHETIC TEST FIXTURE (not real data)",
+   "source_url": "https://example.invalid/fixture/4",
+   "name": "Synthetic Restaurant Delta",
+   "name_is_generated": false,
+   "names": {},
+   "lat": 51.094,
+   "lon": 71.42,
+   "category": "restaurant",
+   "osm_tags": {
+    "amenity": "restaurant",
+    "cuisine": "kazakh"
+   },
+   "opening_hours": null,
+   "contacts": {},
+   "description": "SYNTHETIC fixture restaurant.",
+   "description_source": "summary_of_osm_tags",
+   "collected_at": "2026-10-19T00:00:00+00:00"
+  },
+  {
+   "id": "fixture:5",
+   "source": "SYNTHETIC TEST FIXTURE (not real data)",
+   "source_url": "https://example.invalid/fixture/5",
+   "name": "Synthetic Near Park",
+   "name_is_generated": false,
+   "names": {},
+   "lat": 51.086,
+   "lon": 71.418,
+   "category": "park",
+   "osm_tags": {
+    "leisure": "park"
+   },
+   "opening_hours": null,
+   "contacts": {},
+   "description": "SYNTHETIC fixture park.",
+   "description_source": "summary_of_osm_tags",
+   "collected_at": "2026-10-19T00:00:00+00:00"
+  },
+  {
+   "id": "fixture:6",
+   "source": "SYNTHETIC TEST FIXTURE (not real data)",
+   "source_url": "https://example.invalid/fixture/6",
+   "name": "Synthetic Far Park",
+   "name_is_generated": false,
+   "names": {},
+   "lat": 51.134,
+   "lon": 71.416,
+   "category": "park",
+   "osm_tags": {
+    "leisure": "park"
+   },
+   "opening_hours": null,
+   "contacts": {},
+   "description": "SYNTHETIC fixture park.",
+   "description_source": "summary_of_osm_tags",
+   "collected_at": "2026-10-19T00:00:00+00:00"
+  },
+  {
+   "id": "fixture:7",
+   "source": "SYNTHETIC TEST FIXTURE (not real data)",
+   "source_url": "https://example.invalid/fixture/7",
+   "name": "Synthetic Playground",
+   "name_is_generated": false,
+   "names": {},
+   "lat": 51.087,
+   "lon": 71.413,
+   "category": "playground",
+   "osm_tags": {
+    "leisure": "playground"
+   },
+   "opening_hours": null,
+   "contacts": {},
+   "description": "SYNTHETIC fixture playground.",
+   "description_source": "summary_of_osm_tags",
+   "collected_at": "2026-10-19T00:00:00+00:00"
+  },
+  {
+   "id": "fixture:8",
+   "source": "SYNTHETIC TEST FIXTURE (not real data)",
+   "source_url": "https://example.invalid/fixture/8",
+   "name": "Synthetic Science Museum",
+   "name_is_generated": false,
+   "names": {},
+   "lat": 51.095,
+   "lon": 71.412,
+   "category": "museum",
+   "osm_tags": {
+    "tourism": "museum"
+   },
+   "opening_hours": "Tu-Su 10:00-18:00; Mo off",
+   "contacts": {},
+   "description": "SYNTHETIC fixture museum.",
+   "description_source": "summary_of_osm_tags",
+   "collected_at": "2026-10-19T00:00:00+00:00"
+  },
+  {
+   "id": "fixture:9",
+   "source": "SYNTHETIC TEST FIXTURE (not real data)",
+   "source_url": "https://example.invalid/fixture/9",
+   "name": "Synthetic Viewpoint",
+   "name_is_generated": false,
+   "names": {},
+   "lat": 51.09,
+   "lon": 71.422,
+   "category": "viewpoint",
+   "osm_tags": {
+    "tourism": "viewpoint"
+   },
+   "opening_hours": null,
+   "contacts": {},
+   "description": "SYNTHETIC fixture viewpoint.",
+   "description_source": "summary_of_osm_tags",
+   "collected_at": "2026-10-19T00:00:00+00:00"
+  },
+  {
+   "id": "fixture:10",
+   "source": "SYNTHETIC TEST FIXTURE (not real data)",
+   "source_url": "https://example.invalid/fixture/10",
+   "name": "Synthetic Sculpture",
+   "name_is_generated": false,
+   "names": {},
+   "lat": 51.088,
+   "lon": 71.42,
+   "category": "artwork",
+   "osm_tags": {
+    "tourism": "artwork",
+    "artwork_type": "sculpture"
+   },
+   "opening_hours": null,
+   "contacts": {},
+   "description": "SYNTHETIC fixture artwork.",
+   "description_source": "summary_of_osm_tags",
+   "collected_at": "2026-10-19T00:00:00+00:00"
+  },
+  {
+   "id": "fixture:11",
+   "source": "SYNTHETIC TEST FIXTURE (not real data)",
+   "source_url": "https://example.invalid/fixture/11",
+   "name": "Synthetic Mall",
+   "name_is_generated": false,
+   "names": {},
+   "lat": 51.083,
+   "lon": 71.41,
+   "category": "mall",
+   "osm_tags": {
+    "shop": "mall"
+   },
+   "opening_hours": "Mo-Su 10:00-22:00",
+   "contacts": {},
+   "description": "SYNTHETIC fixture mall.",
+   "description_source": "summary_of_osm_tags",
+   "collected_at": "2026-10-19T00:00:00+00:00"
+  },
+  {
+   "id": "fixture:12",
+   "source": "SYNTHETIC TEST FIXTURE (not real data)",
+   "source_url": "https://example.invalid/fixture/12",
+   "name": "Synthetic Night Bar-Cafe",
+   "name_is_generated": false,
+   "names": {},
+   "lat": 51.096,
+   "lon": 71.423,
+   "category": "cafe",
+   "osm_tags": {
+    "amenity": "cafe"
+   },
+   "opening_hours": "Mo-Su 18:00-04:00",
+   "contacts": {},
+   "description": "SYNTHETIC fixture cafe.",
+   "description_source": "summary_of_osm_tags",
+   "collected_at": "2026-10-19T00:00:00+00:00"
+  },
+  {
+   "id": "fixture:bad",
+   "source": "SYNTHETIC TEST FIXTURE (not real data)",
+   "source_url": "https://example.invalid/fixture/1",
+   "name": "Synthetic Cafe Alpha",
+   "name_is_generated": false,
+   "names": {},
+   "lat": 999,
+   "lon": 71.417,
+   "category": "cafe",
+   "osm_tags": {
+    "amenity": "cafe",
+    "cuisine": "coffee_shop"
+   },
+   "opening_hours": "24/7",
+   "contacts": {},
+   "description": "SYNTHETIC fixture cafe.",
+   "description_source": "summary_of_osm_tags",
+   "collected_at": "2026-10-19T00:00:00+00:00"
+  },
+  {
+   "id": "fixture:2",
+   "source": "SYNTHETIC TEST FIXTURE (not real data)",
+   "source_url": "https://example.invalid/fixture/2",
+   "name": "Synthetic Coffee Beta",
+   "name_is_generated": false,
+   "names": {},
+   "lat": 51.093,
+   "lon": 71.414,
+   "category": "cafe",
+   "osm_tags": {
+    "amenity": "cafe",
+    "internet_access": "wlan"
+   },
+   "opening_hours": "Mo-Su 09:00-21:00",
+   "contacts": {},
+   "description": "SYNTHETIC fixture cafe.",
+   "description_source": "summary_of_osm_tags",
+   "collected_at": "2026-10-19T00:00:00+00:00"
+  }
+ ]
+}

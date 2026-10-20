@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="ru" data-theme="light" data-vision="off">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Astana Walks</title>
+  <meta name="description" content="Astana Walks: nearby places in Astana that fit your time, with sources.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23395886'/%3E%3Cpath d='M16 46c8-2 10-12 18-14s10-10 14-16' fill='none' stroke='%23F0F3FA' stroke-width='5' stroke-linecap='round' stroke-dasharray='1 9'/%3E%3Ccircle cx='48' cy='16' r='5' fill='%238AAEE0'/%3E%3C/svg%3E">
+  <script>
+    // Apply saved preferences before paint (avoids a flash of the wrong theme).
+    (function () {
+      var d = document.documentElement, get = function (k) { try { return localStorage.getItem(k); } catch (e) { return null; } };
+      var theme = get("aw-theme") || (window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      d.setAttribute("data-theme", theme);
+      d.setAttribute("data-vision", get("aw-vision") === "on" ? "on" : "off");
+      var lang = get("aw-lang");
+      if (!lang) { var n = (navigator.language || "ru").slice(0, 2); lang = n === "kk" ? "kk" : (n === "en" ? "en" : "ru"); }
+      d.setAttribute("lang", lang);
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=Unbounded:wght@500;700&display=swap">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+  <a class="skip" href="#results" data-i18n="skip"></a>
+
+  <div class="wrap">
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="Astana Walks">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#395886"/><path d="M16 46c8-2 10-12 18-14s10-10 14-16" fill="none" stroke="#F0F3FA" stroke-width="5" stroke-linecap="round" stroke-dasharray="1 9"/><circle cx="48" cy="16" r="5" fill="#8AAEE0"/></svg>
+        <span class="brand-name">Astana Walks</span>
+      </a>
+      <div class="controls">
+        <div class="seg" role="group" data-i18n-aria="lang_group">
+          <button type="button" data-lang="kk" lang="kk">Қаз</button>
+          <button type="button" data-lang="ru" lang="ru">Рус</button>
+          <button type="button" data-lang="en" lang="en">Eng</button>
+        </div>
+        <button type="button" class="tool" id="themeBtn" aria-pressed="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          <span data-i18n="dark_theme"></span>
+        </button>
+        <button type="button" class="tool" id="visionBtn" aria-pressed="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>
+          <span data-i18n="vision_mode"></span>
+        </button>
+      </div>
+    </header>
+
+    <div id="synthetic" class="banner" hidden data-i18n="synthetic"></div>
+    <div id="noData" class="banner" hidden></div>
+
+    <main>
+      <section class="planner" aria-labelledby="sentence">
+        <svg class="skyline" viewBox="0 0 640 160" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 152H636"/>
+          <path d="M28 152 108 34l50 118"/><path d="M108 34 111 18"/><path d="M60 152c18-40 34-74 48-118"/>
+          <path d="M172 152V92h26v60M204 152V74h22v78M232 152v-44h20v44"/>
+          <path d="M296 152V78M312 152V78"/><path d="M296 78c-8-8-12-18-10-28M312 78c8-8 12-18 10-28"/>
+          <circle cx="304" cy="42" r="17"/><path d="M304 25v-9"/>
+          <path d="M344 152v-36h18v36M368 152v-56h16v56"/>
+          <path d="M402 152 448 84l46 68"/><path d="M425 118h46"/>
+          <path d="M506 152v-30h22v30"/>
+          <circle cx="580" cy="122" r="28"/><path d="M552 122h56M580 94c-12 10-12 46 0 56M580 94c12 10 12 46 0 56"/>
+        </svg>
+        <p class="tagline" data-i18n="tagline"></p>
+        <h1 class="sentence" id="sentence"></h1>
+
+        <div class="start-modes" role="radiogroup" data-i18n-aria="start_group">
+          <label><input type="radio" name="mode" value="landmark" checked> <span data-i18n="mode_landmark"></span></label>
+          <label><input type="radio" name="mode" value="map"> <span data-i18n="mode_map"></span></label>
+          <label><input type="radio" name="mode" value="coords"> <span data-i18n="mode_coords"></span></label>
+          <label><input type="radio" name="mode" value="geo"> <span data-i18n="mode_geo"></span></label>
+          <button type="button" class="geo-btn" id="geoBtn" hidden data-i18n="geo_button"></button>
+          <span class="geo-msg" id="geoMsg" role="status"></span>
+        </div>
+        <div class="pick-map" id="pickMapBox" hidden>
+          <div id="pickMap" role="application" data-i18n-aria="mode_map"></div>
+          <p class="hint" data-i18n="map_pick_help"></p>
+          <p class="hint" id="pickMapMsg" role="status"></p>
+        </div>
+        <label class="back-toggle"><input type="checkbox" id="back" checked> <span data-i18n="back"></span></label>
+
+        <form class="ask" id="askForm" novalidate>
+          <div>
+            <span class="field-label" id="interestsLabel" data-i18n="interests"></span>
+            <div class="chips" id="chips" role="group" aria-labelledby="interestsLabel"></div>
+          </div>
+          <div>
+            <label class="field-label" for="query" data-i18n="request_label"></label>
+            <textarea id="query" maxlength="500"></textarea>
+            <p class="hint" data-i18n="request_hint"></p>
+          </div>
+          <div class="examples" id="examples"></div>
+
+          <details class="more" id="more">
+            <summary data-i18n="more_options"></summary>
+            <div class="more-grid">
+              <fieldset class="opt">
+                <legend data-i18n="pace_label"></legend>
+                <div class="seg pace-seg" role="group" id="paceSeg">
+                  <button type="button" data-pace="leisurely" data-i18n="pace_leisurely"></button>
+                  <button type="button" data-pace="normal" data-i18n="pace_normal"></button>
+                  <button type="button" data-pace="brisk" data-i18n="pace_brisk"></button>
+                </div>
+                <p class="hint" id="paceHelp"></p>
+              </fieldset>
+
+              <fieldset class="opt">
+                <legend><label class="check"><input type="checkbox" id="dlOn"> <span data-i18n="deadline_toggle"></span></label></legend>
+                <div class="opt-row" id="dlFields">
+                  <label><span data-i18n="deadline_date"></span><input type="date" id="dlDate"></label>
+                  <label><span data-i18n="deadline_time"></span><input type="time" id="dlTime" step="300"></label>
+                  <label><span data-i18n="deadline_buffer"></span><input type="number" id="dlBuf" min="0" max="60" step="5" value="10"></label>
+                </div>
+                <p class="hint" id="dlReturn"></p>
+                <p class="hint" data-i18n="deadline_help"></p>
+              </fieldset>
+
+              <fieldset class="opt">
+                <legend data-i18n="outdoor_label"></legend>
+                <div class="opt-row">
+                  <select id="odSel" data-i18n-aria="outdoor_label"></select>
+                  <label id="odCustomWrap" hidden><span data-i18n="outdoor_custom_input"></span><input type="number" id="odCustom" min="0" max="240" step="5" value="10"></label>
+                </div>
+                <label class="check"><input type="checkbox" id="odStrict"> <span data-i18n="outdoor_strict"></span></label>
+                <p class="hint" data-i18n="outdoor_help"></p>
+              </fieldset>
+
+              <fieldset class="opt wide">
+                <legend><label class="check"><input type="checkbox" id="grpOn"> <span data-i18n="group_toggle"></span></label></legend>
+                <div id="grpList" class="grp-list"></div>
+                <button type="button" class="geo-btn" id="grpAdd" data-i18n="group_add" hidden></button>
+                <p class="hint" data-i18n="group_help"></p>
+              </fieldset>
+
+              <fieldset class="opt wide">
+                <legend data-i18n="filters_label"></legend>
+                <label class="check"><input type="checkbox" id="fHours"> <span data-i18n="filter_hours"></span></label>
+                <label class="check"><input type="checkbox" id="fWheel"> <span data-i18n="filter_wheel"></span></label>
+                <p class="hint" data-i18n="filter_help"></p>
+              </fieldset>
+
+              <fieldset class="opt wide">
+                <label class="check"><input type="checkbox" id="remember"> <span data-i18n="remember_visited"></span></label>
+                <div class="opt-row"><button type="button" class="geo-btn" id="resetEx"></button><span class="hint" id="resetMsg" role="status"></span></div>
+              </fieldset>
+            </div>
+          </details>
+
+          <div class="submit-row">
+            <button type="submit" class="submit" id="submit" data-i18n="submit"></button>
+            <button type="button" class="submit secondary" id="surpriseBtn" data-i18n="surprise"></button>
+            <label class="weather-opt"><input type="checkbox" id="useWeather" checked> <span data-i18n="use_weather"></span></label>
+          </div>
+        </form>
+      </section>
+
+      <section class="results" id="results" tabindex="-1" aria-live="polite">
+        <div id="output"><p class="empty" data-i18n="empty"></p></div>
+      </section>
+
+      <div class="ornament" aria-hidden="true"></div>
+      <section class="discover" id="discover" aria-labelledby="dayTitle"></section>
+      <div id="dialogRoot"></div>
+    </main>
+
+    <footer>
+      <div class="cols">
+        <div>
+          <p><span class="model-state" id="modelState"><i aria-hidden="true"></i><span></span></span></p>
+          <p id="datasetLine"></p>
+        </div>
+        <div>
+          <p data-i18n="privacy"></p>
+        </div>
+        <div>
+          <p data-i18n="attribution"></p>
+          <p data-i18n="disclaimer"></p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+  <script src="/assets/i18n.js"></script>
+  <script src="/assets/i18n2.js"></script>
+  <script src="/assets/i18n3.js"></script>
+  <script src="/assets/plan.js"></script>
+  <script src="/assets/app.js"></script>
+</body>
+</html>

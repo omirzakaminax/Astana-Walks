@@ -1,0 +1,2616 @@
+{
+ "meta": {
+  "dataset": "tests/e2e/e2e_pois.json",
+  "dataset_kind": "synthetic",
+  "places": 23,
+  "dataset_collected_at": "2026-10-19T00:00:00+00:00",
+  "executed_at_astana_time": "2026-10-20 21:02",
+  "simulated_planning_time": "2026-10-21 14:30 (Wednesday) — fixed scenario clock (use --now to change)",
+  "retrieval_mode_requested": "lexical",
+  "retrieval_mode_used": [
+   "lexical"
+  ],
+  "model": "NO MODEL (deterministic selector)",
+  "labels": "category-level (eval/queries.json label_rules)"
+ },
+ "summary": {
+  "queries": 33,
+  "hit_at_5_category": {
+   "value": 0.731,
+   "n": 26
+  },
+  "hit_at_5_named_place": {
+   "value": 1.0,
+   "n": 1
+  },
+  "named_place_found_in_dataset": {
+   "value": 0.667,
+   "n": 3
+  },
+  "named_place_unreachable_and_explained": {
+   "value": 1.0,
+   "n": 1
+  },
+  "hit_at_5_poi_labels": {
+   "value": null,
+   "n": 0
+  },
+  "clarification_correct": {
+   "value": 1.0,
+   "n": 1
+  },
+  "unknown_attributes_reported": {
+   "value": 1.0,
+   "n": 4
+  },
+  "plans_with_hard_constraint_violations": {
+   "value": 0,
+   "n": 33
+  },
+  "empty_no_feasible_place_with_suggestions": {
+   "value": 9,
+   "n": 9
+  },
+  "empty_because_model_failed": {
+   "value": 0,
+   "codes": [],
+   "queries": []
+  },
+  "hit5_not_applicable_hard_filter": [
+   "en09"
+  ],
+  "starts": {
+   "named_dataset_place": 33,
+   "simulated_coordinates": 0
+  },
+  "notices_ok": {
+   "value": 1.0,
+   "n": 1
+  },
+  "names_in_all_languages": {
+   "value": 1.0,
+   "n": 33
+  },
+  "replacement_kept_others": [],
+  "walk_replan": [],
+  "styles": [
+   {
+    "alternatives": 2,
+    "expected_at_least": 1,
+    "status": "ok",
+    "all_within_budget": true,
+    "all_distinct": true,
+    "ok": true
+   }
+  ]
+ },
+ "rows": [
+  {
+   "id": "en01",
+   "lang": "en",
+   "tags": [
+    "multi_intent"
+   ],
+   "start_used": "Бәйтерек",
+   "planning_time": "14:30",
+   "start_kind": "named",
+   "status": 200,
+   "seconds_total": 0.017,
+   "clarify_ok": null,
+   "top5": [],
+   "plan": [],
+   "hit5_category": false,
+   "expected_type_in_dataset_passing_filters": 18,
+   "excluded_by_code": {
+    "too_far": 17,
+    "category": 5,
+    "excluded": 1
+   },
+   "violations": [],
+   "empty": true,
+   "suggestions": [
+    "add_time",
+    "any_category",
+    "change_start"
+   ],
+   "empty_kind": "no_feasible_place",
+   "model_items_rejected": 0,
+   "model_items_accepted": 0,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 2.4
+   },
+   "retrieval_mode": "lexical",
+   "samples": [],
+   "names_all_langs": true
+  },
+  {
+   "id": "ru01",
+   "lang": "ru",
+   "tags": [
+    "multi_intent",
+    "paraphrase_of:en01"
+   ],
+   "start_used": "Бәйтерек",
+   "planning_time": "14:30",
+   "start_kind": "named",
+   "status": 200,
+   "seconds_total": 0.008,
+   "clarify_ok": null,
+   "top5": [],
+   "plan": [],
+   "hit5_category": false,
+   "expected_type_in_dataset_passing_filters": 18,
+   "excluded_by_code": {
+    "too_far": 17,
+    "category": 5,
+    "excluded": 1
+   },
+   "violations": [],
+   "empty": true,
+   "suggestions": [
+    "add_time",
+    "any_category",
+    "change_start"
+   ],
+   "empty_kind": "no_feasible_place",
+   "model_items_rejected": 0,
+   "model_items_accepted": 0,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 1.2
+   },
+   "retrieval_mode": "lexical",
+   "samples": [],
+   "names_all_langs": true
+  },
+  {
+   "id": "kk01",
+   "lang": "kk",
+   "tags": [
+    "multi_intent",
+    "paraphrase_of:en01"
+   ],
+   "start_used": "Бәйтерек",
+   "planning_time": "14:30",
+   "start_kind": "named",
+   "status": 200,
+   "seconds_total": 0.009,
+   "clarify_ok": null,
+   "top5": [],
+   "plan": [],
+   "hit5_category": false,
+   "expected_type_in_dataset_passing_filters": 18,
+   "excluded_by_code": {
+    "too_far": 17,
+    "category": 5,
+    "excluded": 1
+   },
+   "violations": [],
+   "empty": true,
+   "suggestions": [
+    "add_time",
+    "any_category",
+    "change_start"
+   ],
+   "empty_kind": "no_feasible_place",
+   "model_items_rejected": 0,
+   "model_items_accepted": 0,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 1.3
+   },
+   "retrieval_mode": "lexical",
+   "samples": [],
+   "names_all_langs": true
+  },
+  {
+   "id": "en02",
+   "lang": "en",
+   "tags": [
+    "negation"
+   ],
+   "start_used": "Хан Шатыр",
+   "planning_time": "14:30",
+   "start_kind": "named",
+   "status": 200,
+   "seconds_total": 0.018,
+   "clarify_ok": null,
+   "top5": [
+    {
+     "id": "syn:6",
+     "name": "Synthetic museum 6",
+     "category": "museum"
+    },
+    {
+     "id": "syn:8",
+     "name": "Synthetic artwork 8",
+     "category": "artwork"
+    },
+    {
+     "id": "syn:205",
+     "name": "«Астана Жұлдызы» ескерткіші",
+     "category": "artwork"
+    }
+   ],
+   "plan": [
+    {
+     "id": "syn:6",
+     "category": "museum"
+    },
+    {
+     "id": "syn:8",
+     "category": "artwork"
+    },
+    {
+     "id": "syn:205",
+     "category": "artwork"
+    }
+   ],
+   "hit5_category": true,
+   "violations": [],
+   "model_items_rejected": 0,
+   "model_items_accepted": 3,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 1.2,
+    "generation": 0.3,
+    "planning": 6.6
+   },
+   "retrieval_mode": "lexical",
+   "samples": [
+    {
+     "names": {
+      "kk": "Synthetic museum 6 [original]",
+      "ru": "Synthetic museum 6 [original]",
+      "en": "Synthetic museum 6 [original]"
+     },
+     "category": "museum",
+     "text_source": "calc",
+     "why": "",
+     "activity": "",
+     "warnings": [
+      "no_why"
+     ]
+    },
+    {
+     "names": {
+      "kk": "Synthetic artwork 8 [original]",
+      "ru": "Synthetic artwork 8 [original]",
+      "en": "Synthetic artwork 8 [original]"
+     },
+     "category": "artwork",
+     "text_source": "calc",
+     "why": "",
+     "activity": "",
+     "warnings": [
+      "no_why"
+     ]
+    },
+    {
+     "names": {
+      "kk": "«Астана Жұлдызы» ескерткіші [original]",
+      "ru": "«Астана Жұлдызы» ескерткіші [original]",
+      "en": "«Астана Жұлдызы» ескерткіші [original]"
+     },
+     "category": "artwork",
+     "text_source": "calc",
+     "why": "",
+     "activity": "",
+     "warnings": [
+      "no_why"
+     ]
+    }
+   ],
+   "names_all_langs": true
+  },
+  {
+   "id": "ru02",
+   "lang": "ru",
+   "tags": [
+    "negation",
+    "paraphrase_of:en02"
+   ],
+   "start_used": "Хан Шатыр",
+   "planning_time": "14:30",
+   "start_kind": "named",
+   "status": 200,
+   "seconds_total": 0.011,
+   "clarify_ok": null,
+   "top5": [
+    {
+     "id": "syn:6",
+     "name": "Synthetic museum 6",
+     "category": "museum"
+    },
+    {
+     "id": "syn:8",
+     "name": "Synthetic artwork 8",
+     "category": "artwork"
+    },
+    {
+     "id": "syn:205",
+     "name": "«Астана Жұлдызы» ескерткіші",
+     "category": "artwork"
+    }
+   ],
+   "plan": [
+    {
+     "id": "syn:6",
+     "category": "museum"
+    },
+    {
+     "id": "syn:8",
+     "category": "artwork"
+    },
+    {
+     "id": "syn:205",
+     "category": "artwork"
+    }
+   ],
+   "hit5_category": true,
+   "violations": [],
+   "model_items_rejected": 0,
+   "model_items_accepted": 3,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 0.9,
+    "generation": 0.1,
+    "planning": 3.3
+   },
+   "retrieval_mode": "lexical",
+   "samples": [
+    {
+     "names": {
+      "kk": "Synthetic museum 6 [original]",
+      "ru": "Synthetic museum 6 [original]",
+      "en": "Synthetic museum 6 [original]"
+     },
+     "category": "museum",
+     "text_source": "calc",
+     "why": "",
+     "activity": "",
+     "warnings": [
+      "no_why"
+     ]
+    },
+    {
+     "names": {
+      "kk": "Synthetic artwork 8 [original]",
+      "ru": "Synthetic artwork 8 [original]",
+      "en": "Synthetic artwork 8 [original]"
+     },
+     "category": "artwork",
+     "text_source": "calc",
+     "why": "",
+     "activity": "",
+     "warnings": [
+      "no_why"
+     ]
+    },
+    {
+     "names": {
+      "kk": "«Астана Жұлдызы» ескерткіші [original]",
+      "ru": "«Астана Жұлдызы» ескерткіші [original]",
+      "en": "«Астана Жұлдызы» ескерткіші [original]"
+     },
+     "category": "artwork",
+     "text_source": "calc",
+     "why": "",
+     "activity": "",
+     "warnings": [
+      "no_why"
+     ]
+    }
+   ],
+   "names_all_langs": true
+  },
+  {
+   "id": "kk02",
+   "lang": "kk",
+   "tags": [
+    "negation",
+    "paraphrase_of:en02"
+   ],
+   "start_used": "Хан Шатыр",
+   "planning_time": "14:30",
+   "start_kind": "named",
+   "status": 200,
+   "seconds_total": 0.008,
+   "clarify_ok": null,
+   "top5": [
+    {
+     "id": "syn:6",
+     "name": "Synthetic museum 6",
+     "category": "museum"
+    },
+    {
+     "id": "syn:8",
+     "name": "Synthetic artwork 8",
+     "category": "artwork"
+    },
+    {
+     "id": "syn:205",
+     "name": "«Астана Жұлдызы» ескерткіші",
+     "category": "artwork"
+    }
+   ],
+   "plan": [
+    {
+     "id": "syn:6",
+     "category": "museum"
+    },
+    {
+     "id": "syn:8",
+     "category": "artwork"
+    },
+    {
+     "id": "syn:205",
+     "category": "artwork"
+    }
+   ],
+   "hit5_category": true,
+   "violations": [],
+   "model_items_rejected": 0,
+   "model_items_accepted": 3,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 0.7,
+    "generation": 0.1,
+    "planning": 3.3
+   },
+   "retrieval_mode": "lexical",
+   "samples": [
+    {
+     "names": {
+      "kk": "Synthetic museum 6 [original]",
+      "ru": "Synthetic museum 6 [original]",
+      "en": "Synthetic museum 6 [original]"
+     },
+     "category": "museum",
+     "text_source": "calc",
+     "why": "",
+     "activity": "",
+     "warnings": [
+      "no_why"
+     ]
+    },
+    {
+     "names": {
+      "kk": "Synthetic artwork 8 [original]",
+      "ru": "Synthetic artwork 8 [original]",
+      "en": "Synthetic artwork 8 [original]"
+     },
+     "category": "artwork",
+     "text_source": "calc",
+     "why": "",
+     "activity": "",
+     "warnings": [
+      "no_why"
+     ]
+    },
+    {
+     "names": {
+      "kk": "«Астана Жұлдызы» ескерткіші [original]",
+      "ru": "«Астана Жұлдызы» ескерткіші [original]",
+      "en": "«Астана Жұлдызы» ескерткіші [original]"
+     },
+     "category": "artwork",
+     "text_source": "calc",
+     "why": "",
+     "activity": "",
+     "warnings": [
+      "no_why"
+     ]
+    }
+   ],
+   "names_all_langs": true
+  },
+  {
+   "id": "en03",
+   "lang": "en",
+   "tags": [
+    "negation"
+   ],
+   "start_used": "EXPO <b>Sphere</b>",
+   "planning_time": "14:30",
+   "start_kind": "named",
+   "status": 200,
+   "seconds_total": 0.013,
+   "clarify_ok": null,
+   "top5": [
+    {
+     "id": "syn:7",
+     "name": "Synthetic viewpoint 7",
+     "category": "viewpoint"
+    },
+    {
+     "id": "syn:209",
+     "name": "А. С. Пушкину",
+     "category": "artwork"
+    },
+    {
+     "id": "syn:202",
+     "name": "Хан Шатыр",
+     "category": "attraction"
+    },
+    {
+     "id": "syn:8",
+     "name": "Synthetic artwork 8",
+     "category": "artwork"
+    },
+    {
+     "id": "syn:207",
+     "name": "Атырау көпірі",
+     "category": "attraction"
+    }
+   ],
+   "plan": [
+    {
+     "id": "syn:7",
+     "category": "viewpoint"
+    },
+    {
+     "id": "syn:202",
+     "category": "attraction"
+    },
+    {
+     "id": "syn:209",
+     "category": "artwork"
+    }
+   ],
+   "hit5_category": true,
+   "violations": [],
+   "model_items_rejected": 0,
+   "model_items_accepted": 3,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 0.7,
+    "generation": 0.1,
+    "planning": 7.9
+   },
+   "retrieval_mode": "lexical",
+   "samples": [
+    {
+     "names": {
+      "kk": "Synthetic viewpoint 7 [original]",
+      "ru": "Synthetic viewpoint 7 [original]",
+      "en": "Synthetic viewpoint 7 [original]"
+     },
+     "category": "viewpoint",
+     "text_source": "calc",
+     "why": "",
+     "activity": "",
+     "warnings": [
+      "no_why"
+     ]
+    },
+    {
+     "names": {
+      "kk": "Хан Шатыр [original]",
+      "ru": "Хан Шатыр [original]",
+      "en": "Khan Shatyr [osm_latin]"
+     },
+     "category": "attraction",
+     "text_source": "calc",
+     "why": "",
+     "activity": "",
+     "warnings": [
+      "no_why"
+     ]
+    },
+    {
+     "names": {
+      "kk": "А. С. Пушкину [original]",
+      "ru": "А. С. Пушкину [original]",
+      "en": "А. С. Пушкину [original]"
+     },
+     "category": "artwork",
+     "text_source": "calc",
+     "why": "",
+     "activity": "",
+     "warnings": [
+      "no_why"
+     ]
+    }
+   ],
+   "names_all_langs": true
+  },
+  {
+   "id": "kk03",
+   "lang": "kk",
+   "tags": [
+    "negation",
+    "kazakh_suffix"
+   ],
+   "start_used": "EXPO <b>Sphere</b>",
+   "planning_time": "14:30",
+   "start_kind": "named",
+   "status": 200,
+   "seconds_total": 0.022,
+   "clarify_ok": null,
+   "top5": [
+    {
+     "id": "syn:3",
+     "name": "Synthetic park 3",
+     "category": "park"
+    },
+    {
+     "id": "syn:4",
+     "name": "Synthetic park 4",
+     "category": "park"
+    },
+    {
+     "id": "syn:7",
+     "name": "Synthetic viewpoint 7",
+     "category": "viewpoint"
+    },
+    {
+     "id": "syn:8",
+     "name": "Synthetic artwork 8",
+     "category": "artwork"
+    },
+    {
+     "id": "syn:202",
+     "name": "Хан Шатыр",
+     "category": "attraction"
+    }
+   ],
+   "plan": [
+    {
+     "id": "syn:3",
+     "category": "park"
+    },
+    {
+     "id": "syn:7",
+     "category": "viewpoint"
+    }
+   ],
+   "hit5_category": true,
+   "violations": [],
+   "model_items_rejected": 0,
+   "model_items_accepted": 2,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 0.6,
+    "generation": 0.1,
+    "planning": 17.7
+   },
+   "retrieval_mode": "lexical",
+   "samples": [
+    {
+     "names": {
+      "kk": "Synthetic park 3 [original]",
+      "ru": "Synthetic park 3 [original]",
+      "en": "Synthetic park 3 [original]"
+     },
+     "category": "park",
+     "text_source": "calc",
+     "why": "",
+     "activity": "",
+     "warnings": [
+      "no_why"
+     ]
+    },
+    {
+     "names": {
+      "kk": "Synthetic viewpoint 7 [original]",
+      "ru": "Synthetic viewpoint 7 [original]",
+      "en": "Synthetic viewpoint 7 [original]"
+     },
+     "category": "viewpoint",
+     "text_source": "calc",
+     "why": "",
+     "activity": "",
+     "warnings": [
+      "no_why"
+     ]
+    }
+   ],
+   "names_all_langs": true
+  },
+  {
+   "id": "en04",
+   "lang": "en",
+   "tags": [
+    "named_place"
+   ],
+   "start_used": "Мега Силк Вей",
+   "planning_time": "14:30",
+   "start_kind": "named",
+   "status": 200,
+   "seconds_total": 0.047,
+   "clarify_ok": null,
+   "top5": [
+    {
+     "id": "syn:3",
+     "name": "Synthetic park 3",
+     "category": "park"
+    },
+    {
+     "id": "syn:4",
+     "name": "Synthetic park 4",
+     "category": "park"
+    },
+    {
+     "id": "syn:202",
+     "name": "Хан Шатыр",
+     "category": "attraction"
+    },
+    {
+     "id": "syn:206",
+     "name": "EXPO <b>Sphere</b>",
+     "category": "attraction"
+    },
+    {
+     "id": "syn:7",
+     "name": "Synthetic viewpoint 7",
+     "category": "viewpoint"
+    }
+   ],
+   "plan": [
+    {
+     "id": "syn:3",
+     "category": "park"
+    },
+    {
+     "id": "syn:202",
+     "category": "attraction"
+    },
+    {
+     "id": "syn:4",
+     "category": "park"
+    }
+   ],
+   "named_in_dataset": true,
+   "named_excluded": {
+    "syn:212": "too_far"
+   },
+   "hit5_named": null,
+   "named_unreachable_explained": true,
+   "violations": [],
+   "model_items_rejected": 0,
+   "model_items_accepted": 3,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 0.8,
+    "generation": 0.1,
+    "planning": 41.4
+   },
+   "retrieval_mode": "lexical",
+   "samples": [
+    {
+     "names": {
+      "kk": "Synthetic park 3 [original]",
+      "ru": "Synthetic park 3 [original]",
+      "en": "Synthetic park 3 [original]"
+     },
+     "category": "park",
+     "text_source": "calc",
+     "why": "",
+     "activity": "",
+     "warnings": [
+      "no_why"
+     ]
+    },
+    {
+     "names": {
+      "kk": "Хан Шатыр [original]",
+      "ru": "Хан Шатыр [original]",
+      "en": "Khan Shatyr [osm_latin]"
+     },
+     "category": "attraction",
+     "text_source": "calc",
+     "why": "",
+     "activity": "",
+     "warnings": [
+      "no_why"
+     ]
+    },
+    {
+     "names": {
+      "kk": "Synthetic park 4 [original]",
+      "ru": "Synthetic park 4 [original]",
+      "en": "Synthetic park 4 [original]"
+     },
+     "category": "park",
+     "text_source": "calc",
+     "why": "",
+     "activity": "",
+     "warnings": [
+      "no_why"
+     ]
+    }
+   ],
+   "names_all_langs": true
+  },
+  {
+   "id": "ru04",
+   "lang": "ru",
+   "tags": [
+    "named_place",
+    "alias"
+   ],
+   "start_used": "Мега Силк Вей",
+   "planning_time": "14:30",
+   "start_kind": "named",
+   "status": 200,
+   "seconds_total": 0.025,
+   "clarify_ok": null,
+   "top5": [
+    {
+     "id": "syn:202",
+     "name": "Хан Шатыр",
+     "category": "attraction"
+    },
+    {
+     "id": "syn:206",
+     "name": "EXPO <b>Sphere</b>",
+     "category": "attraction"
+    },
+    {
+     "id": "syn:7",
+     "name": "Synthetic viewpoint 7",
+     "category": "viewpoint"
+    },
+    {
+     "id": "syn:6",
+     "name": "Synthetic museum 6",
+     "category": "museum"
+    },
+    {
+     "id": "syn:8",
+     "name": "Synthetic artwork 8",
+     "category": "artwork"
+    }
+   ],
+   "plan": [
+    {
+     "id": "syn:206",
+     "category": "attraction"
+    },
+    {
+     "id": "syn:202",
+     "category": "attraction"
+    },
+    {
+     "id": "syn:7",
+     "category": "viewpoint"
+    }
+   ],
+   "named_in_dataset": true,
+   "named_excluded": {},
+   "hit5_named": true,
+   "named_unreachable_explained": null,
+   "violations": [],
+   "model_items_rejected": 0,
+   "model_items_accepted": 3,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 0.7,
+    "generation": 0.1,
+    "planning": 20.1
+   },
+   "retrieval_mode": "lexical",
+   "samples": [
+    {
+     "names": {
+      "kk": "EXPO <b>Sphere</b> [original]",
+      "ru": "EXPO <b>Sphere</b> [original]",
+      "en": "EXPO <b>Sphere</b> [original]"
+     },
+     "category": "attraction",
+     "text_source": "calc",
+     "why": "",
+     "activity": "",
+     "warnings": [
+      "no_why"
+     ]
+    },
+    {
+     "names": {
+      "kk": "Хан Шатыр [original]",
+      "ru": "Хан Шатыр [original]",
+      "en": "Khan Shatyr [osm_latin]"
+     },
+     "category": "attraction",
+     "text_source": "calc",
+     "why": "",
+     "activity": "",
+     "warnings": [
+      "no_why"
+     ]
+    },
+    {
+     "names": {
+      "kk": "Synthetic viewpoint 7 [original]",
+      "ru": "Synthetic viewpoint 7 [original]",
+      "en": "Synthetic viewpoint 7 [original]"
+     },
+     "category": "viewpoint",
+     "text_source": "calc",
+     "why": "",
+     "activity": "",
+     "warnings": [
+      "no_why"
+     ]
+    }
+   ],
+   "names_all_langs": true
+  },
+  {
+   "id": "kk04",
+   "lang": "kk",
+   "tags": [
+    "named_place",
+    "spelling_variant"
+   ],
+   "start_used": "Мега Силк Вей",
+   "planning_time": "14:30",
+   "start_kind": "named",
+   "status": 200,
+   "seconds_total": 0.048,
+   "clarify_ok": null,
+   "top5": [
+    {
+     "id": "syn:3",
+     "name": "Synthetic park 3",
+     "category": "park"
+    },
+    {
+     "id": "syn:4",
+     "name": "Synthetic park 4",
+     "category": "park"
+    },
+    {
+     "id": "syn:202",
+     "name": "Хан Шатыр",
+     "category": "attraction"
+    },
+    {
+     "id": "syn:206",
+     "name": "EXPO <b>Sphere</b>",
+     "category": "attraction"
+    },
+    {
+     "id": "syn:7",
+     "name": "Synthetic viewpoint 7",
+     "category": "viewpoint"
+    }
+   ],
+   "plan": [
+    {
+     "id": "syn:3",
+     "category": "park"
+    },
+    {
+     "id": "syn:202",
+     "category": "attraction"
+    },
+    {
+     "id": "syn:4",
+     "category": "park"
+    }
+   ],
+   "named_in_dataset": false,
+   "named_excluded": {},
+   "hit5_named": null,
+   "named_unreachable_explained": null,
+   "violations": [],
+   "model_items_rejected": 0,
+   "model_items_accepted": 3,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 0.8,
+    "generation": 0.1,
+    "planning": 40.2
+   },
+   "retrieval_mode": "lexical",
+   "samples": [
+    {
+     "names": {
+      "kk": "Synthetic park 3 [original]",
+      "ru": "Synthetic park 3 [original]",
+      "en": "Synthetic park 3 [original]"
+     },
+     "category": "park",
+     "text_source": "calc",
+     "why": "",
+     "activity": "",
+     "warnings": [
+      "no_why"
+     ]
+    },
+    {
+     "names": {
+      "kk": "Хан Шатыр [original]",
+      "ru": "Хан Шатыр [original]",
+      "en": "Khan Shatyr [osm_latin]"
+     },
+     "category": "attraction",
+     "text_source": "calc",
+     "why": "",
+     "activity": "",
+     "warnings": [
+      "no_why"
+     ]
+    },
+    {
+     "names": {
+      "kk": "Synthetic park 4 [original]",
+      "ru": "Synthetic park 4 [original]",
+      "en": "Synthetic park 4 [original]"
+     },
+     "category": "park",
+     "text_source": "calc",
+     "why": "",
+     "activity": "",
+     "warnings": [
+      "no_why"
+     ]
+    }
+   ],
+   "names_all_langs": true
+  },
+  {
+   "id": "en05",
+   "lang": "en",
+   "tags": [
+    "unsupported"
+   ],
+   "start_used": "EXPO <b>Sphere</b>",
+   "planning_time": "14:30",
+   "start_kind": "named",
+   "status": 200,
+   "seconds_total": 0.005,
+   "clarify_ok": null,
+   "top5": [
+    {
+     "id": "syn:204",
+     "name": "Кофе Бум",
+     "category": "cafe"
+    },
+    {
+     "id": "syn:1",
+     "name": "Synthetic cafe 1",
+     "category": "cafe"
+    }
+   ],
+   "plan": [
+    {
+     "id": "syn:204",
+     "category": "cafe"
+    },
+    {
+     "id": "syn:1",
+     "category": "cafe"
+    }
+   ],
+   "hit5_category": true,
+   "violations": [],
+   "unknown_reported": true,
+   "model_items_rejected": 0,
+   "model_items_accepted": 2,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 0.7,
+    "generation": 0.1,
+    "planning": 0.7
+   },
+   "retrieval_mode": "lexical",
+   "samples": [
+    {
+     "names": {
+      "kk": "Кофе Бум [original]",
+      "ru": "Кофе Бум [original]",
+      "en": "Кофе Бум [original]"
+     },
+     "category": "cafe",
+     "text_source": "calc",
+     "why": "",
+     "activity": "",
+     "warnings": [
+      "no_why"
+     ]
+    },
+    {
+     "names": {
+      "kk": "Synthetic cafe 1 [original]",
+      "ru": "Synthetic cafe 1 [original]",
+      "en": "Synthetic cafe 1 [original]"
+     },
+     "category": "cafe",
+     "text_source": "calc",
+     "why": "",
+     "activity": "",
+     "warnings": [
+      "no_why"
+     ]
+    }
+   ],
+   "names_all_langs": true
+  },
+  {
+   "id": "ru05",
+   "lang": "ru",
+   "tags": [
+    "unsupported",
+    "paraphrase_of:en05"
+   ],
+   "start_used": "EXPO <b>Sphere</b>",
+   "planning_time": "14:30",
+   "start_kind": "named",
+   "status": 200,
+   "seconds_total": 0.005,
+   "clarify_ok": null,
+   "top5": [
+    {
+     "id": "syn:204",
+     "name": "Кофе Бум",
+     "category": "cafe"
+    },
+    {
+     "id": "syn:1",
+     "name": "Synthetic cafe 1",
+     "category": "cafe"
+    }
+   ],
+   "plan": [
+    {
+     "id": "syn:204",
+     "category": "cafe"
+    },
+    {
+     "id": "syn:1",
+     "category": "cafe"
+    }
+   ],
+   "hit5_category": true,
+   "violations": [],
+   "unknown_reported": true,
+   "model_items_rejected": 0,
+   "model_items_accepted": 2,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 0.7,
+    "generation": 0.1,
+    "planning": 0.6
+   },
+   "retrieval_mode": "lexical",
+   "samples": [
+    {
+     "names": {
+      "kk": "Кофе Бум [original]",
+      "ru": "Кофе Бум [original]",
+      "en": "Кофе Бум [original]"
+     },
+     "category": "cafe",
+     "text_source": "calc",
+     "why": "",
+     "activity": "",
+     "warnings": [
+      "no_why"
+     ]
+    },
+    {
+     "names": {
+      "kk": "Synthetic cafe 1 [original]",
+      "ru": "Synthetic cafe 1 [original]",
+      "en": "Synthetic cafe 1 [original]"
+     },
+     "category": "cafe",
+     "text_source": "calc",
+     "why": "",
+     "activity": "",
+     "warnings": [
+      "no_why"
+     ]
+    }
+   ],
+   "names_all_langs": true
+  },
+  {
+   "id": "kk05",
+   "lang": "kk",
+   "tags": [
+    "unsupported",
+    "paraphrase_of:en05"
+   ],
+   "start_used": "EXPO <b>Sphere</b>",
+   "planning_time": "14:30",
+   "start_kind": "named",
+   "status": 200,
+   "seconds_total": 0.006,
+   "clarify_ok": null,
+   "top5": [
+    {
+     "id": "syn:204",
+     "name": "Кофе Бум",
+     "category": "cafe"
+    },
+    {
+     "id": "syn:1",
+     "name": "Synthetic cafe 1",
+     "category": "cafe"
+    }
+   ],
+   "plan": [
+    {
+     "id": "syn:204",
+     "category": "cafe"
+    },
+    {
+     "id": "syn:1",
+     "category": "cafe"
+    }
+   ],
+   "hit5_category": true,
+   "violations": [],
+   "unknown_reported": true,
+   "model_items_rejected": 0,
+   "model_items_accepted": 2,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 0.9,
+    "generation": 0.1,
+    "planning": 0.7
+   },
+   "retrieval_mode": "lexical",
+   "samples": [
+    {
+     "names": {
+      "kk": "Кофе Бум [original]",
+      "ru": "Кофе Бум [original]",
+      "en": "Кофе Бум [original]"
+     },
+     "category": "cafe",
+     "text_source": "calc",
+     "why": "",
+     "activity": "",
+     "warnings": [
+      "no_why"
+     ]
+    },
+    {
+     "names": {
+      "kk": "Synthetic cafe 1 [original]",
+      "ru": "Synthetic cafe 1 [original]",
+      "en": "Synthetic cafe 1 [original]"
+     },
+     "category": "cafe",
+     "text_source": "calc",
+     "why": "",
+     "activity": "",
+     "warnings": [
+      "no_why"
+     ]
+    }
+   ],
+   "names_all_langs": true
+  },
+  {
+   "id": "en06",
+   "lang": "en",
+   "tags": [
+    "short_window"
+   ],
+   "start_used": "Хан Шатыр",
+   "planning_time": "14:30",
+   "start_kind": "named",
+   "status": 200,
+   "seconds_total": 0.003,
+   "clarify_ok": null,
+   "top5": [
+    {
+     "id": "syn:207",
+     "name": "Атырау көпірі",
+     "category": "attraction"
+    }
+   ],
+   "plan": [
+    {
+     "id": "syn:207",
+     "category": "attraction"
+    }
+   ],
+   "hit5_category": true,
+   "violations": [],
+   "model_items_rejected": 0,
+   "model_items_accepted": 1,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 0.5,
+    "generation": 0.1,
+    "planning": 0.1
+   },
+   "retrieval_mode": "lexical",
+   "samples": [
+    {
+     "names": {
+      "kk": "Атырау көпірі [osm]",
+      "ru": "Атырау көпірі [original]",
+      "en": "Атырау көпірі [original] ≈Atyrau Bridge"
+     },
+     "category": "attraction",
+     "text_source": "calc",
+     "why": "",
+     "activity": "",
+     "warnings": [
+      "no_why"
+     ]
+    }
+   ],
+   "names_all_langs": true
+  },
+  {
+   "id": "ru06",
+   "lang": "ru",
+   "tags": [
+    "deadline",
+    "return"
+   ],
+   "start_used": "Бәйтерек",
+   "planning_time": "14:30",
+   "start_kind": "named",
+   "status": 200,
+   "seconds_total": 0.003,
+   "clarify_ok": null,
+   "top5": [],
+   "plan": [],
+   "hit5_category": false,
+   "expected_type_in_dataset_passing_filters": 11,
+   "excluded_by_code": {
+    "category": 12,
+    "too_far": 10,
+    "excluded": 1
+   },
+   "violations": [],
+   "empty": true,
+   "suggestions": [
+    "deadline_binding",
+    "any_category",
+    "change_start"
+   ],
+   "empty_kind": "no_feasible_place",
+   "model_items_rejected": 0,
+   "model_items_accepted": 0,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 0.3
+   },
+   "retrieval_mode": "lexical",
+   "samples": [],
+   "names_all_langs": true
+  },
+  {
+   "id": "en07",
+   "lang": "en",
+   "tags": [
+    "group",
+    "slow_pace"
+   ],
+   "start_used": "EXPO <b>Sphere</b>",
+   "planning_time": "14:30",
+   "start_kind": "named",
+   "status": 200,
+   "seconds_total": 0.012,
+   "clarify_ok": null,
+   "top5": [
+    {
+     "id": "syn:5",
+     "name": "Synthetic playground 5",
+     "category": "playground"
+    },
+    {
+     "id": "syn:204",
+     "name": "Кофе Бум",
+     "category": "cafe"
+    },
+    {
+     "id": "syn:3",
+     "name": "Synthetic park 3",
+     "category": "park"
+    },
+    {
+     "id": "syn:1",
+     "name": "Synthetic cafe 1",
+     "category": "cafe"
+    },
+    {
+     "id": "syn:6",
+     "name": "Synthetic museum 6",
+     "category": "museum"
+    }
+   ],
+   "plan": [
+    {
+     "id": "syn:204",
+     "category": "cafe"
+    },
+    {
+     "id": "syn:5",
+     "category": "playground"
+    },
+    {
+     "id": "syn:3",
+     "category": "park"
+    }
+   ],
+   "hit5_category": true,
+   "violations": [],
+   "model_items_rejected": 0,
+   "model_items_accepted": 3,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 0.6,
+    "generation": 0.1,
+    "planning": 8.9
+   },
+   "retrieval_mode": "lexical",
+   "samples": [
+    {
+     "names": {
+      "kk": "Кофе Бум [original]",
+      "ru": "Кофе Бум [original]",
+      "en": "Кофе Бум [original]"
+     },
+     "category": "cafe",
+     "text_source": "calc",
+     "why": "",
+     "activity": "",
+     "warnings": [
+      "no_why"
+     ]
+    },
+    {
+     "names": {
+      "kk": "Synthetic playground 5 [original]",
+      "ru": "Synthetic playground 5 [original]",
+      "en": "Synthetic playground 5 [original]"
+     },
+     "category": "playground",
+     "text_source": "calc",
+     "why": "",
+     "activity": "",
+     "warnings": [
+      "no_why"
+     ]
+    },
+    {
+     "names": {
+      "kk": "Synthetic park 3 [original]",
+      "ru": "Synthetic park 3 [original]",
+      "en": "Synthetic park 3 [original]"
+     },
+     "category": "park",
+     "text_source": "calc",
+     "why": "",
+     "activity": "",
+     "warnings": [
+      "no_why"
+     ]
+    }
+   ],
+   "names_all_langs": true
+  },
+  {
+   "id": "ru07",
+   "lang": "ru",
+   "tags": [
+    "family",
+    "slow_pace"
+   ],
+   "start_used": "EXPO <b>Sphere</b>",
+   "planning_time": "14:30",
+   "start_kind": "named",
+   "status": 200,
+   "seconds_total": 0.004,
+   "clarify_ok": null,
+   "top5": [
+    {
+     "id": "syn:5",
+     "name": "Synthetic playground 5",
+     "category": "playground"
+    },
+    {
+     "id": "syn:3",
+     "name": "Synthetic park 3",
+     "category": "park"
+    }
+   ],
+   "plan": [
+    {
+     "id": "syn:5",
+     "category": "playground"
+    }
+   ],
+   "hit5_category": true,
+   "violations": [],
+   "model_items_rejected": 0,
+   "model_items_accepted": 1,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 0.5,
+    "generation": 0.1,
+    "planning": 0.6
+   },
+   "retrieval_mode": "lexical",
+   "samples": [
+    {
+     "names": {
+      "kk": "Synthetic playground 5 [original]",
+      "ru": "Synthetic playground 5 [original]",
+      "en": "Synthetic playground 5 [original]"
+     },
+     "category": "playground",
+     "text_source": "calc",
+     "why": "",
+     "activity": "",
+     "warnings": [
+      "no_why"
+     ]
+    }
+   ],
+   "names_all_langs": true
+  },
+  {
+   "id": "en08",
+   "lang": "en",
+   "tags": [
+    "outdoor_cap",
+    "weather"
+   ],
+   "start_used": "Хан Шатыр",
+   "planning_time": "14:30",
+   "start_kind": "named",
+   "status": 200,
+   "seconds_total": 0.004,
+   "clarify_ok": null,
+   "top5": [
+    {
+     "id": "syn:1",
+     "name": "Synthetic cafe 1",
+     "category": "cafe"
+    },
+    {
+     "id": "syn:211",
+     "name": "Coffee Boom",
+     "category": "cafe"
+    }
+   ],
+   "plan": [
+    {
+     "id": "syn:1",
+     "category": "cafe"
+    },
+    {
+     "id": "syn:211",
+     "category": "cafe"
+    }
+   ],
+   "hit5_category": true,
+   "violations": [],
+   "model_items_rejected": 0,
+   "model_items_accepted": 2,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 0.6,
+    "generation": 0.1,
+    "planning": 0.8
+   },
+   "retrieval_mode": "lexical",
+   "samples": [
+    {
+     "names": {
+      "kk": "Synthetic cafe 1 [original]",
+      "ru": "Synthetic cafe 1 [original]",
+      "en": "Synthetic cafe 1 [original]"
+     },
+     "category": "cafe",
+     "text_source": "calc",
+     "why": "",
+     "activity": "",
+     "warnings": [
+      "no_why"
+     ]
+    },
+    {
+     "names": {
+      "kk": "Coffee Boom [original]",
+      "ru": "Coffee Boom [original]",
+      "en": "Coffee Boom [original]"
+     },
+     "category": "cafe",
+     "text_source": "calc",
+     "why": "",
+     "activity": "",
+     "warnings": [
+      "no_why"
+     ]
+    }
+   ],
+   "names_all_langs": true
+  },
+  {
+   "id": "kk08",
+   "lang": "kk",
+   "tags": [
+    "outdoor_cap",
+    "weather"
+   ],
+   "start_used": "Хан Шатыр",
+   "planning_time": "14:30",
+   "start_kind": "named",
+   "status": 200,
+   "seconds_total": 0.007,
+   "clarify_ok": null,
+   "top5": [
+    {
+     "id": "syn:1",
+     "name": "Synthetic cafe 1",
+     "category": "cafe"
+    },
+    {
+     "id": "syn:211",
+     "name": "Coffee Boom",
+     "category": "cafe"
+    }
+   ],
+   "plan": [
+    {
+     "id": "syn:1",
+     "category": "cafe"
+    },
+    {
+     "id": "syn:211",
+     "category": "cafe"
+    }
+   ],
+   "hit5_category": true,
+   "violations": [],
+   "model_items_rejected": 0,
+   "model_items_accepted": 2,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 0.6,
+    "generation": 0.1,
+    "planning": 2.7
+   },
+   "retrieval_mode": "lexical",
+   "samples": [
+    {
+     "names": {
+      "kk": "Synthetic cafe 1 [original]",
+      "ru": "Synthetic cafe 1 [original]",
+      "en": "Synthetic cafe 1 [original]"
+     },
+     "category": "cafe",
+     "text_source": "calc",
+     "why": "",
+     "activity": "",
+     "warnings": [
+      "no_why"
+     ]
+    },
+    {
+     "names": {
+      "kk": "Coffee Boom [original]",
+      "ru": "Coffee Boom [original]",
+      "en": "Coffee Boom [original]"
+     },
+     "category": "cafe",
+     "text_source": "calc",
+     "why": "",
+     "activity": "",
+     "warnings": [
+      "no_why"
+     ]
+    }
+   ],
+   "names_all_langs": true
+  },
+  {
+   "id": "en09",
+   "lang": "en",
+   "tags": [
+    "accessibility",
+    "may_be_empty"
+   ],
+   "start_used": "EXPO <b>Sphere</b>",
+   "planning_time": "14:30",
+   "start_kind": "named",
+   "status": 200,
+   "seconds_total": 0.003,
+   "clarify_ok": null,
+   "top5": [],
+   "plan": [],
+   "hit5_category": null,
+   "expected_type_in_dataset_passing_filters": 0,
+   "excluded_by_code": {
+    "category": 18,
+    "no_wheelchair_info": 4,
+    "excluded": 1
+   },
+   "hit5_na_reason": "hard filter left no eligible place (see excluded_by_code)",
+   "violations": [],
+   "empty": true,
+   "suggestions": [
+    "drop_wheelchair_filter",
+    "any_category",
+    "change_start"
+   ],
+   "empty_kind": "no_feasible_place",
+   "model_items_rejected": 0,
+   "model_items_accepted": 0,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 0.5
+   },
+   "retrieval_mode": "lexical",
+   "samples": [],
+   "names_all_langs": true
+  },
+  {
+   "id": "ru09",
+   "lang": "ru",
+   "tags": [
+    "hours_filter"
+   ],
+   "start_used": "EXPO <b>Sphere</b>",
+   "planning_time": "14:30",
+   "start_kind": "named",
+   "status": 200,
+   "seconds_total": 0.005,
+   "clarify_ok": null,
+   "top5": [
+    {
+     "id": "syn:204",
+     "name": "Кофе Бум",
+     "category": "cafe"
+    },
+    {
+     "id": "syn:1",
+     "name": "Synthetic cafe 1",
+     "category": "cafe"
+    }
+   ],
+   "plan": [
+    {
+     "id": "syn:204",
+     "category": "cafe"
+    },
+    {
+     "id": "syn:1",
+     "category": "cafe"
+    }
+   ],
+   "hit5_category": true,
+   "violations": [],
+   "model_items_rejected": 0,
+   "model_items_accepted": 2,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 0.6,
+    "generation": 0.1,
+    "planning": 0.5
+   },
+   "retrieval_mode": "lexical",
+   "samples": [
+    {
+     "names": {
+      "kk": "Кофе Бум [original]",
+      "ru": "Кофе Бум [original]",
+      "en": "Кофе Бум [original]"
+     },
+     "category": "cafe",
+     "text_source": "calc",
+     "why": "",
+     "activity": "",
+     "warnings": [
+      "no_why"
+     ]
+    },
+    {
+     "names": {
+      "kk": "Synthetic cafe 1 [original]",
+      "ru": "Synthetic cafe 1 [original]",
+      "en": "Synthetic cafe 1 [original]"
+     },
+     "category": "cafe",
+     "text_source": "calc",
+     "why": "",
+     "activity": "",
+     "warnings": [
+      "no_why"
+     ]
+    }
+   ],
+   "names_all_langs": true
+  },
+  {
+   "id": "en10",
+   "lang": "en",
+   "tags": [
+    "impossible"
+   ],
+   "start_used": "EXPO <b>Sphere</b>",
+   "planning_time": "14:30",
+   "start_kind": "named",
+   "status": 200,
+   "seconds_total": 0.002,
+   "clarify_ok": null,
+   "top5": [],
+   "plan": [],
+   "violations": [],
+   "empty": true,
+   "suggestions": [
+    "add_time",
+    "any_category",
+    "change_start"
+   ],
+   "empty_kind": "no_feasible_place",
+   "model_items_rejected": 0,
+   "model_items_accepted": 0,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 0.4
+   },
+   "retrieval_mode": "lexical",
+   "samples": [],
+   "names_all_langs": true
+  },
+  {
+   "id": "ru10",
+   "lang": "ru",
+   "tags": [
+    "ambiguous_start"
+   ],
+   "start_used": "Мега Силк Вей",
+   "planning_time": "14:30",
+   "start_kind": "named",
+   "status": 200,
+   "seconds_total": 0.002,
+   "clarify": "start_conflict",
+   "clarify_ok": true,
+   "top5": [],
+   "plan": [],
+   "violations": [],
+   "model_items_rejected": 0,
+   "model_items_accepted": 0,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": null,
+   "retrieval_mode": null,
+   "samples": [],
+   "names_all_langs": true
+  },
+  {
+   "id": "en11",
+   "lang": "en",
+   "tags": [
+    "prompt_injection"
+   ],
+   "start_used": "EXPO <b>Sphere</b>",
+   "planning_time": "14:30",
+   "start_kind": "named",
+   "status": 200,
+   "seconds_total": 0.007,
+   "clarify_ok": null,
+   "top5": [
+    {
+     "id": "syn:204",
+     "name": "Кофе Бум",
+     "category": "cafe"
+    },
+    {
+     "id": "syn:1",
+     "name": "Synthetic cafe 1",
+     "category": "cafe"
+    }
+   ],
+   "plan": [
+    {
+     "id": "syn:204",
+     "category": "cafe"
+    },
+    {
+     "id": "syn:1",
+     "category": "cafe"
+    }
+   ],
+   "hit5_category": true,
+   "violations": [],
+   "model_items_rejected": 0,
+   "model_items_accepted": 2,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 1.0,
+    "generation": 0.1,
+    "planning": 0.8
+   },
+   "retrieval_mode": "lexical",
+   "samples": [
+    {
+     "names": {
+      "kk": "Кофе Бум [original]",
+      "ru": "Кофе Бум [original]",
+      "en": "Кофе Бум [original]"
+     },
+     "category": "cafe",
+     "text_source": "calc",
+     "why": "",
+     "activity": "",
+     "warnings": [
+      "no_why"
+     ]
+    },
+    {
+     "names": {
+      "kk": "Synthetic cafe 1 [original]",
+      "ru": "Synthetic cafe 1 [original]",
+      "en": "Synthetic cafe 1 [original]"
+     },
+     "category": "cafe",
+     "text_source": "calc",
+     "why": "",
+     "activity": "",
+     "warnings": [
+      "no_why"
+     ]
+    }
+   ],
+   "names_all_langs": true
+  },
+  {
+   "id": "kk11",
+   "lang": "kk",
+   "tags": [
+    "multi_intent",
+    "sequence"
+   ],
+   "start_used": "Бәйтерек",
+   "planning_time": "14:30",
+   "start_kind": "named",
+   "status": 200,
+   "seconds_total": 0.004,
+   "clarify_ok": null,
+   "top5": [],
+   "plan": [],
+   "hit5_category": false,
+   "expected_type_in_dataset_passing_filters": 10,
+   "excluded_by_code": {
+    "too_far": 17,
+    "category": 5,
+    "excluded": 1
+   },
+   "violations": [],
+   "empty": true,
+   "suggestions": [
+    "add_time",
+    "any_category",
+    "change_start"
+   ],
+   "empty_kind": "no_feasible_place",
+   "model_items_rejected": 0,
+   "model_items_accepted": 0,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 0.4
+   },
+   "retrieval_mode": "lexical",
+   "samples": [],
+   "names_all_langs": true
+  },
+  {
+   "id": "en12",
+   "lang": "en",
+   "tags": [
+    "replacement"
+   ],
+   "start_used": "Бәйтерек",
+   "planning_time": "14:30",
+   "start_kind": "named",
+   "status": 200,
+   "seconds_total": 0.003,
+   "clarify_ok": null,
+   "top5": [],
+   "plan": [],
+   "hit5_category": false,
+   "expected_type_in_dataset_passing_filters": 9,
+   "excluded_by_code": {
+    "category": 14,
+    "too_far": 8,
+    "excluded": 1
+   },
+   "violations": [],
+   "empty": true,
+   "suggestions": [
+    "add_time",
+    "any_category",
+    "change_start"
+   ],
+   "empty_kind": "no_feasible_place",
+   "model_items_rejected": 0,
+   "model_items_accepted": 0,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 0.5
+   },
+   "retrieval_mode": "lexical",
+   "samples": [],
+   "names_all_langs": true
+  },
+  {
+   "id": "ru12",
+   "lang": "ru",
+   "tags": [
+    "active_walk",
+    "return_anchor"
+   ],
+   "start_used": "Бәйтерек",
+   "planning_time": "14:30",
+   "start_kind": "named",
+   "status": 200,
+   "seconds_total": 0.003,
+   "clarify_ok": null,
+   "top5": [
+    {
+     "id": "syn:12",
+     "name": "Synthetic park 12",
+     "category": "park"
+    }
+   ],
+   "plan": [
+    {
+     "id": "syn:12",
+     "category": "park"
+    }
+   ],
+   "hit5_category": true,
+   "violations": [],
+   "model_items_rejected": 0,
+   "model_items_accepted": 1,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 0.4,
+    "generation": 0.1,
+    "planning": 0.2
+   },
+   "retrieval_mode": "lexical",
+   "samples": [
+    {
+     "names": {
+      "kk": "Synthetic park 12 [original]",
+      "ru": "Synthetic park 12 [original]",
+      "en": "Synthetic park 12 [original]"
+     },
+     "category": "park",
+     "text_source": "calc",
+     "why": "",
+     "activity": "",
+     "warnings": [
+      "no_why"
+     ]
+    }
+   ],
+   "names_all_langs": true
+  },
+  {
+   "id": "en13",
+   "lang": "en",
+   "tags": [
+    "plan_styles"
+   ],
+   "start_used": "EXPO <b>Sphere</b>",
+   "planning_time": "14:30",
+   "start_kind": "named",
+   "status": 200,
+   "seconds_total": 0.041,
+   "clarify_ok": null,
+   "top5": [
+    {
+     "id": "syn:204",
+     "name": "Кофе Бум",
+     "category": "cafe"
+    },
+    {
+     "id": "syn:3",
+     "name": "Synthetic park 3",
+     "category": "park"
+    },
+    {
+     "id": "syn:4",
+     "name": "Synthetic park 4",
+     "category": "park"
+    },
+    {
+     "id": "syn:1",
+     "name": "Synthetic cafe 1",
+     "category": "cafe"
+    },
+    {
+     "id": "syn:7",
+     "name": "Synthetic viewpoint 7",
+     "category": "viewpoint"
+    }
+   ],
+   "plan": [
+    {
+     "id": "syn:204",
+     "category": "cafe"
+    },
+    {
+     "id": "syn:4",
+     "category": "park"
+    },
+    {
+     "id": "syn:3",
+     "category": "park"
+    }
+   ],
+   "hit5_category": true,
+   "violations": [],
+   "model_items_rejected": 0,
+   "model_items_accepted": 3,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 0.8,
+    "generation": 0.1,
+    "planning": 35.5
+   },
+   "retrieval_mode": "lexical",
+   "samples": [
+    {
+     "names": {
+      "kk": "Кофе Бум [original]",
+      "ru": "Кофе Бум [original]",
+      "en": "Кофе Бум [original]"
+     },
+     "category": "cafe",
+     "text_source": "calc",
+     "why": "",
+     "activity": "",
+     "warnings": [
+      "no_why"
+     ]
+    },
+    {
+     "names": {
+      "kk": "Synthetic park 4 [original]",
+      "ru": "Synthetic park 4 [original]",
+      "en": "Synthetic park 4 [original]"
+     },
+     "category": "park",
+     "text_source": "calc",
+     "why": "",
+     "activity": "",
+     "warnings": [
+      "no_why"
+     ]
+    },
+    {
+     "names": {
+      "kk": "Synthetic park 3 [original]",
+      "ru": "Synthetic park 3 [original]",
+      "en": "Synthetic park 3 [original]"
+     },
+     "category": "park",
+     "text_source": "calc",
+     "why": "",
+     "activity": "",
+     "warnings": [
+      "no_why"
+     ]
+    }
+   ],
+   "names_all_langs": true,
+   "styles": {
+    "alternatives": 2,
+    "expected_at_least": 1,
+    "status": "ok",
+    "all_within_budget": true,
+    "all_distinct": true,
+    "ok": true
+   }
+  },
+  {
+   "id": "en14",
+   "lang": "en",
+   "tags": [
+    "official_scenario",
+    "flight"
+   ],
+   "start_used": "Бәйтерек",
+   "planning_time": "14:30",
+   "start_kind": "named",
+   "status": 200,
+   "seconds_total": 0.005,
+   "clarify_ok": null,
+   "top5": [],
+   "plan": [],
+   "hit5_category": false,
+   "expected_type_in_dataset_passing_filters": 9,
+   "excluded_by_code": {
+    "category": 14,
+    "too_far": 8,
+    "excluded": 1
+   },
+   "violations": [],
+   "empty": true,
+   "suggestions": [
+    "add_time",
+    "any_category",
+    "change_start"
+   ],
+   "empty_kind": "no_feasible_place",
+   "notice_ok": true,
+   "model_items_rejected": 0,
+   "model_items_accepted": 0,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 0.8
+   },
+   "retrieval_mode": "lexical",
+   "samples": [],
+   "names_all_langs": true
+  },
+  {
+   "id": "ru14",
+   "lang": "ru",
+   "tags": [
+    "official_scenario"
+   ],
+   "start_used": "Мега Силк Вей",
+   "planning_time": "14:30",
+   "start_kind": "named",
+   "status": 200,
+   "seconds_total": 0.022,
+   "clarify_ok": null,
+   "top5": [
+    {
+     "id": "syn:3",
+     "name": "Synthetic park 3",
+     "category": "park"
+    },
+    {
+     "id": "syn:4",
+     "name": "Synthetic park 4",
+     "category": "park"
+    },
+    {
+     "id": "syn:7",
+     "name": "Synthetic viewpoint 7",
+     "category": "viewpoint"
+    },
+    {
+     "id": "syn:8",
+     "name": "Synthetic artwork 8",
+     "category": "artwork"
+    },
+    {
+     "id": "syn:206",
+     "name": "EXPO <b>Sphere</b>",
+     "category": "attraction"
+    }
+   ],
+   "plan": [
+    {
+     "id": "syn:3",
+     "category": "park"
+    }
+   ],
+   "hit5_category": true,
+   "violations": [],
+   "model_items_rejected": 0,
+   "model_items_accepted": 1,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 0.9,
+    "generation": 0.1,
+    "planning": 17.2
+   },
+   "retrieval_mode": "lexical",
+   "samples": [
+    {
+     "names": {
+      "kk": "Synthetic park 3 [original]",
+      "ru": "Synthetic park 3 [original]",
+      "en": "Synthetic park 3 [original]"
+     },
+     "category": "park",
+     "text_source": "calc",
+     "why": "",
+     "activity": "",
+     "warnings": [
+      "no_why"
+     ]
+    }
+   ],
+   "names_all_langs": true
+  },
+  {
+   "id": "en15",
+   "lang": "en",
+   "tags": [
+    "official_scenario",
+    "night",
+    "unsupported"
+   ],
+   "start_used": "Хан Шатыр",
+   "planning_time": "23:30",
+   "start_kind": "named",
+   "status": 200,
+   "seconds_total": 0.014,
+   "clarify_ok": null,
+   "top5": [
+    {
+     "id": "syn:207",
+     "name": "Атырау көпірі",
+     "category": "attraction"
+    },
+    {
+     "id": "syn:206",
+     "name": "EXPO <b>Sphere</b>",
+     "category": "attraction"
+    },
+    {
+     "id": "syn:7",
+     "name": "Synthetic viewpoint 7",
+     "category": "viewpoint"
+    },
+    {
+     "id": "syn:209",
+     "name": "А. С. Пушкину",
+     "category": "artwork"
+    },
+    {
+     "id": "syn:8",
+     "name": "Synthetic artwork 8",
+     "category": "artwork"
+    }
+   ],
+   "plan": [
+    {
+     "id": "syn:207",
+     "category": "attraction"
+    },
+    {
+     "id": "syn:206",
+     "category": "attraction"
+    },
+    {
+     "id": "syn:7",
+     "category": "viewpoint"
+    }
+   ],
+   "violations": [],
+   "unknown_reported": true,
+   "model_items_rejected": 0,
+   "model_items_accepted": 3,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 0.8,
+    "generation": 0.1,
+    "planning": 8.5
+   },
+   "retrieval_mode": "lexical",
+   "samples": [
+    {
+     "names": {
+      "kk": "Атырау көпірі [osm]",
+      "ru": "Атырау көпірі [original]",
+      "en": "Атырау көпірі [original] ≈Atyrau Bridge"
+     },
+     "category": "attraction",
+     "text_source": "calc",
+     "why": "",
+     "activity": "",
+     "warnings": [
+      "no_why"
+     ]
+    },
+    {
+     "names": {
+      "kk": "EXPO <b>Sphere</b> [original]",
+      "ru": "EXPO <b>Sphere</b> [original]",
+      "en": "EXPO <b>Sphere</b> [original]"
+     },
+     "category": "attraction",
+     "text_source": "calc",
+     "why": "",
+     "activity": "",
+     "warnings": [
+      "no_why"
+     ]
+    },
+    {
+     "names": {
+      "kk": "Synthetic viewpoint 7 [original]",
+      "ru": "Synthetic viewpoint 7 [original]",
+      "en": "Synthetic viewpoint 7 [original]"
+     },
+     "category": "viewpoint",
+     "text_source": "calc",
+     "why": "",
+     "activity": "",
+     "warnings": [
+      "no_why"
+     ]
+    }
+   ],
+   "names_all_langs": true
+  },
+  {
+   "id": "kk15",
+   "lang": "kk",
+   "tags": [
+    "official_scenario",
+    "family",
+    "interactive_claim"
+   ],
+   "start_used": "Хан Шатыр",
+   "planning_time": "14:30",
+   "start_kind": "named",
+   "status": 200,
+   "seconds_total": 0.023,
+   "clarify_ok": null,
+   "top5": [
+    {
+     "id": "syn:5",
+     "name": "Synthetic playground 5",
+     "category": "playground"
+    },
+    {
+     "id": "syn:6",
+     "name": "Synthetic museum 6",
+     "category": "museum"
+    },
+    {
+     "id": "syn:3",
+     "name": "Synthetic park 3",
+     "category": "park"
+    },
+    {
+     "id": "syn:8",
+     "name": "Synthetic artwork 8",
+     "category": "artwork"
+    },
+    {
+     "id": "syn:205",
+     "name": "«Астана Жұлдызы» ескерткіші",
+     "category": "artwork"
+    }
+   ],
+   "plan": [
+    {
+     "id": "syn:6",
+     "category": "museum"
+    }
+   ],
+   "hit5_category": true,
+   "violations": [],
+   "model_items_rejected": 0,
+   "model_items_accepted": 1,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 0.8,
+    "generation": 0.1,
+    "planning": 15.8
+   },
+   "retrieval_mode": "lexical",
+   "samples": [
+    {
+     "names": {
+      "kk": "Synthetic museum 6 [original]",
+      "ru": "Synthetic museum 6 [original]",
+      "en": "Synthetic museum 6 [original]"
+     },
+     "category": "museum",
+     "text_source": "calc",
+     "why": "",
+     "activity": "",
+     "warnings": []
+    }
+   ],
+   "names_all_langs": true
+  }
+ ]
+}

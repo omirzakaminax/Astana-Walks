@@ -1,0 +1,2640 @@
+{
+ "meta": {
+  "dataset": "C:\\hack\\astana-walks\\data\\pois.json",
+  "dataset_kind": "real",
+  "places": 504,
+  "dataset_collected_at": "2026-10-20T15:30:27+00:00",
+  "executed_at_astana_time": "2026-10-20 22:04",
+  "simulated_planning_time": "2026-10-21 14:30 (Wednesday) — fixed scenario clock (use --now to change)",
+  "retrieval_mode_requested": "lexical",
+  "retrieval_mode_used": [
+   "lexical"
+  ],
+  "model": "qwen3:4b-instruct",
+  "labels": "category-level (eval/queries.json label_rules)"
+ },
+ "summary": {
+  "queries": 33,
+  "hit_at_5_category": {
+   "value": 1.0,
+   "n": 26
+  },
+  "hit_at_5_named_place": {
+   "value": 0.0,
+   "n": 1
+  },
+  "named_place_found_in_dataset": {
+   "value": 1.0,
+   "n": 3
+  },
+  "named_place_unreachable_and_explained": {
+   "value": 1.0,
+   "n": 2
+  },
+  "hit_at_5_poi_labels": {
+   "value": null,
+   "n": 0
+  },
+  "clarification_correct": {
+   "value": 1.0,
+   "n": 1
+  },
+  "unknown_attributes_reported": {
+   "value": 1.0,
+   "n": 4
+  },
+  "plans_with_hard_constraint_violations": {
+   "value": 0,
+   "n": 33
+  },
+  "empty_no_feasible_place_with_suggestions": {
+   "value": 4,
+   "n": 4
+  },
+  "empty_because_model_failed": {
+   "value": 0,
+   "codes": [],
+   "queries": []
+  },
+  "hit5_not_applicable_hard_filter": [
+   "en09"
+  ],
+  "starts": {
+   "named_dataset_place": 21,
+   "simulated_coordinates": 12
+  },
+  "notices_ok": {
+   "value": 1.0,
+   "n": 1
+  },
+  "names_in_all_languages": {
+   "value": 1.0,
+   "n": 33
+  },
+  "replacement_kept_others": [
+   {
+    "ok": true,
+    "others_kept": true,
+    "within_budget": true
+   }
+  ],
+  "walk_replan": [
+   {
+    "ok": true,
+    "returns_to_original": true,
+    "within_remaining_time": true
+   }
+  ],
+  "styles": [
+   {
+    "alternatives": 1,
+    "expected_at_least": 1,
+    "status": "ok",
+    "all_within_budget": true,
+    "all_distinct": true,
+    "ok": true
+   }
+  ],
+  "model": {
+   "valid_source_id_rate": {
+    "value": 1.0,
+    "n_items": 39
+   },
+   "malformed_after_repair": {
+    "value": 0,
+    "n": 33
+   },
+   "repair_attempts": 0,
+   "removed_unsupported_claims": 1,
+   "wrong_language_warnings": 0,
+   "other_errors": [],
+   "output_tokens_max": 235,
+   "hit_output_cap": [],
+   "latency_s": {
+    "first_call_incl_loading": 6.3,
+    "later_calls_median": 5.69,
+    "calls": 35
+   }
+  }
+ },
+ "rows": [
+  {
+   "id": "en01",
+   "lang": "en",
+   "tags": [
+    "multi_intent"
+   ],
+   "start_used": "Бәйтерек",
+   "planning_time": "14:30",
+   "start_kind": "named",
+   "status": 200,
+   "seconds_total": 10.776,
+   "clarify_ok": null,
+   "top5": [
+    {
+     "id": "osm:way/230358854",
+     "name": "Сквер",
+     "category": "park"
+    },
+    {
+     "id": "osm:node/12520559589",
+     "name": "Лепим и варим",
+     "category": "cafe"
+    },
+    {
+     "id": "osm:node/10564988185",
+     "name": "Degirmen",
+     "category": "cafe"
+    },
+    {
+     "id": "osm:way/258753491",
+     "name": "Әнші субұрқақтар",
+     "category": "fountain"
+    }
+   ],
+   "plan": [
+    {
+     "id": "osm:node/12520559589",
+     "category": "cafe"
+    },
+    {
+     "id": "osm:way/258753491",
+     "category": "fountain"
+    }
+   ],
+   "hit5_category": true,
+   "violations": [],
+   "model_tokens": {
+    "prompt": 1052,
+    "output": 148,
+    "done_reason": "stop"
+   },
+   "model_items_rejected": 0,
+   "model_items_accepted": 2,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 19.9,
+    "generation": 6304.7,
+    "planning": 45.8
+   },
+   "retrieval_mode": "lexical",
+   "samples": [
+    {
+     "names": {
+      "kk": "Лепим и варим [original]",
+      "ru": "Лепим и варим [original]",
+      "en": "Лепим и варим [original]"
+     },
+     "category": "cafe",
+     "text_source": "ai",
+     "why": "It is a cafe offering coffee and is close to the starting point. A short walk after can be combined with coffee.",
+     "activity": "Enjoy a coffee at a cafe and take a short walk through the park.",
+     "warnings": []
+    },
+    {
+     "names": {
+      "kk": "Әнші субұрқақтар [original]",
+      "ru": "Поющий фонтан [osm]",
+      "en": "Әнші субұрқақтар [original]"
+     },
+     "category": "fountain",
+     "text_source": "ai",
+     "why": "It's within walking distance and takes only a few minutes to reach. A short visit fits well within your 45-minute time budget.",
+     "activity": "Visit the fountain and enjoy a coffee nearby.",
+     "warnings": []
+    }
+   ],
+   "names_all_langs": true
+  },
+  {
+   "id": "ru01",
+   "lang": "ru",
+   "tags": [
+    "multi_intent",
+    "paraphrase_of:en01"
+   ],
+   "start_used": "Бәйтерек",
+   "planning_time": "14:30",
+   "start_kind": "named",
+   "status": 200,
+   "seconds_total": 10.935,
+   "clarify_ok": null,
+   "top5": [
+    {
+     "id": "osm:way/230358854",
+     "name": "Сквер",
+     "category": "park"
+    },
+    {
+     "id": "osm:node/12520559589",
+     "name": "Лепим и варим",
+     "category": "cafe"
+    },
+    {
+     "id": "osm:node/10564988185",
+     "name": "Degirmen",
+     "category": "cafe"
+    },
+    {
+     "id": "osm:way/258753491",
+     "name": "Әнші субұрқақтар",
+     "category": "fountain"
+    }
+   ],
+   "plan": [
+    {
+     "id": "osm:node/12520559589",
+     "category": "cafe"
+    },
+    {
+     "id": "osm:way/258753491",
+     "category": "fountain"
+    }
+   ],
+   "hit5_category": true,
+   "violations": [],
+   "model_tokens": {
+    "prompt": 1075,
+    "output": 144,
+    "done_reason": "stop"
+   },
+   "model_items_rejected": 0,
+   "model_items_accepted": 2,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 3.4,
+    "generation": 6265.3,
+    "planning": 12.3
+   },
+   "retrieval_mode": "lexical",
+   "samples": [
+    {
+     "names": {
+      "kk": "Лепим и варим [original]",
+      "ru": "Лепим и варим [original]",
+      "en": "Лепим и варим [original]"
+     },
+     "category": "cafe",
+     "text_source": "ai",
+     "why": "Кафе предлагает кофе и русскую кухню. Близко от центра, легко добраться за 7 минут.",
+     "activity": "Посетить кафе и попробовать русскую кухню",
+     "warnings": []
+    },
+    {
+     "names": {
+      "kk": "Әнші субұрқақтар [original]",
+      "ru": "Поющий фонтан [osm]",
+      "en": "Әнші субұрқақтар [original]"
+     },
+     "category": "fountain",
+     "text_source": "ai",
+     "why": "Расстояние 340 метров — подходит для 45 минут. Прогулка и фонтан соответствуют интересам кофе и парка.",
+     "activity": "Посмотреть поющий фонтан и пройти короткую прогулку вокруг него",
+     "warnings": []
+    }
+   ],
+   "names_all_langs": true
+  },
+  {
+   "id": "kk01",
+   "lang": "kk",
+   "tags": [
+    "multi_intent",
+    "paraphrase_of:en01"
+   ],
+   "start_used": "Бәйтерек",
+   "planning_time": "14:30",
+   "start_kind": "named",
+   "status": 200,
+   "seconds_total": 16.409,
+   "clarify_ok": null,
+   "top5": [
+    {
+     "id": "osm:way/230358854",
+     "name": "Сквер",
+     "category": "park"
+    },
+    {
+     "id": "osm:node/10564988185",
+     "name": "Degirmen",
+     "category": "cafe"
+    },
+    {
+     "id": "osm:node/6408271985",
+     "name": "CrepeCafe",
+     "category": "cafe"
+    },
+    {
+     "id": "osm:way/258753491",
+     "name": "Әнші субұрқақтар",
+     "category": "fountain"
+    }
+   ],
+   "plan": [
+    {
+     "id": "osm:node/10564988185",
+     "category": "cafe"
+    },
+    {
+     "id": "osm:way/258753491",
+     "category": "fountain"
+    }
+   ],
+   "hit5_category": true,
+   "violations": [],
+   "model_tokens": {
+    "prompt": 1229,
+    "output": 139,
+    "done_reason": "stop"
+   },
+   "model_items_rejected": 0,
+   "model_items_accepted": 2,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 3.7,
+    "generation": 6198.6,
+    "planning": 10.5
+   },
+   "retrieval_mode": "lexical",
+   "samples": [
+    {
+     "names": {
+      "kk": "Degirmen [original]",
+      "ru": "Degirmen [original]",
+      "en": "Degirmen [original]"
+     },
+     "category": "cafe",
+     "text_source": "ai",
+     "why": "Кофе қажет, және қарап тұрып жатады",
+     "activity": "Кофе ішіп, қарап тұрыңыз",
+     "warnings": []
+    },
+    {
+     "names": {
+      "kk": "Әнші субұрқақтар [original]",
+      "ru": "Поющий фонтан [osm]",
+      "en": "Әнші субұрқақтар [original]"
+     },
+     "category": "fountain",
+     "text_source": "ai",
+     "why": "45 минут бар, әрі қарай жүріп өтетін жерде. Кофе және жерде қалуға тиімді барынша құнды жері барынша құнды жері барынша құнды жері барынша құнды жері барынша құнды жері барынша құнды жері барынша құнды жері барынша құнды жері барынша құнды жері барынша құнды жері барынша құнды жері барынша құнды жері барынша құнды жері",
+     "activity": "Кофе ішіп, Әнші субұрқақтарға барып, тұрып қалып қойыңыз",
+     "warnings": []
+    }
+   ],
+   "names_all_langs": true
+  },
+  {
+   "id": "en02",
+   "lang": "en",
+   "tags": [
+    "negation"
+   ],
+   "start_used": "Хан Шатыр",
+   "planning_time": "14:30",
+   "start_kind": "named",
+   "status": 200,
+   "seconds_total": 6.066,
+   "clarify_ok": null,
+   "top5": [
+    {
+     "id": "osm:way/230358847",
+     "name": "Көрме",
+     "category": "gallery"
+    },
+    {
+     "id": "osm:node/2388707906",
+     "name": "Астана-Экспо КС",
+     "category": "gallery"
+    },
+    {
+     "id": "osm:node/5126825313",
+     "name": "Астаналық Цирк",
+     "category": "arts_centre"
+    },
+    {
+     "id": "osm:node/13340040666",
+     "name": "Қобызшы",
+     "category": "artwork"
+    },
+    {
+     "id": "osm:node/13340050452",
+     "name": "Хатико",
+     "category": "artwork"
+    }
+   ],
+   "plan": [
+    {
+     "id": "osm:way/230358847",
+     "category": "gallery"
+    },
+    {
+     "id": "osm:node/2388707906",
+     "category": "gallery"
+    }
+   ],
+   "hit5_category": true,
+   "violations": [],
+   "model_tokens": {
+    "prompt": 1126,
+    "output": 120,
+    "done_reason": "stop"
+   },
+   "model_items_rejected": 0,
+   "model_items_accepted": 2,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 1.8,
+    "generation": 5904.3,
+    "planning": 15.3
+   },
+   "retrieval_mode": "lexical",
+   "samples": [
+    {
+     "names": {
+      "kk": "Көрме [original]",
+      "ru": "Корме [osm]",
+      "en": "Korme [osm]"
+     },
+     "category": "gallery",
+     "text_source": "ai",
+     "why": "It is an art gallery and indoor, suitable for culture and art interests.",
+     "activity": "Explore the art collection",
+     "warnings": []
+    },
+    {
+     "names": {
+      "kk": "Астана-Экспо КС [original]",
+      "ru": "Астана-Экспо КС [original]",
+      "en": "Астана-Экспо КС [original]"
+     },
+     "category": "gallery",
+     "text_source": "ai",
+     "why": "It is an art gallery and indoor, ideal for art and culture enthusiasts.",
+     "activity": "View the art exhibits",
+     "warnings": []
+    }
+   ],
+   "names_all_langs": true
+  },
+  {
+   "id": "ru02",
+   "lang": "ru",
+   "tags": [
+    "negation",
+    "paraphrase_of:en02"
+   ],
+   "start_used": "Хан Шатыр",
+   "planning_time": "14:30",
+   "start_kind": "named",
+   "status": 200,
+   "seconds_total": 6.211,
+   "clarify_ok": null,
+   "top5": [
+    {
+     "id": "osm:way/230358847",
+     "name": "Көрме",
+     "category": "gallery"
+    },
+    {
+     "id": "osm:node/2388707906",
+     "name": "Астана-Экспо КС",
+     "category": "gallery"
+    },
+    {
+     "id": "osm:node/5126825313",
+     "name": "Астаналық Цирк",
+     "category": "arts_centre"
+    },
+    {
+     "id": "osm:node/13340040666",
+     "name": "Қобызшы",
+     "category": "artwork"
+    },
+    {
+     "id": "osm:node/13340050452",
+     "name": "Хатико",
+     "category": "artwork"
+    }
+   ],
+   "plan": [
+    {
+     "id": "osm:way/230358847",
+     "category": "gallery"
+    },
+    {
+     "id": "osm:node/2388707906",
+     "category": "gallery"
+    }
+   ],
+   "hit5_category": true,
+   "violations": [],
+   "model_tokens": {
+    "prompt": 1204,
+    "output": 135,
+    "done_reason": "stop"
+   },
+   "model_items_rejected": 0,
+   "model_items_accepted": 2,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 1.9,
+    "generation": 6040.7,
+    "planning": 15.6
+   },
+   "retrieval_mode": "lexical",
+   "samples": [
+    {
+     "names": {
+      "kk": "Көрме [original]",
+      "ru": "Корме [osm]",
+      "en": "Korme [osm]"
+     },
+     "category": "gallery",
+     "text_source": "ai",
+     "why": "Это галерея, которая специализируется на искусстве. Подходит для интересов пользователя.",
+     "activity": "Посмотреть выставку в галерее",
+     "warnings": []
+    },
+    {
+     "names": {
+      "kk": "Астана-Экспо КС [original]",
+      "ru": "Астана-Экспо КС [original]",
+      "en": "Астана-Экспо КС [original]"
+     },
+     "category": "gallery",
+     "text_source": "ai",
+     "why": "Это галерея, посвящённая искусству. Отлично подходит для культурных интересов.",
+     "activity": "Посмотреть выставку в галерее",
+     "warnings": []
+    }
+   ],
+   "names_all_langs": true
+  },
+  {
+   "id": "kk02",
+   "lang": "kk",
+   "tags": [
+    "negation",
+    "paraphrase_of:en02"
+   ],
+   "start_used": "Хан Шатыр",
+   "planning_time": "14:30",
+   "start_kind": "named",
+   "status": 200,
+   "seconds_total": 8.587,
+   "clarify_ok": null,
+   "top5": [
+    {
+     "id": "osm:way/230358847",
+     "name": "Көрме",
+     "category": "gallery"
+    },
+    {
+     "id": "osm:node/2388707906",
+     "name": "Астана-Экспо КС",
+     "category": "gallery"
+    },
+    {
+     "id": "osm:node/5126825313",
+     "name": "Астаналық Цирк",
+     "category": "arts_centre"
+    },
+    {
+     "id": "osm:node/13340040666",
+     "name": "Қобызшы",
+     "category": "artwork"
+    },
+    {
+     "id": "osm:node/13340050452",
+     "name": "Хатико",
+     "category": "artwork"
+    }
+   ],
+   "plan": [
+    {
+     "id": "osm:way/230358847",
+     "category": "gallery"
+    },
+    {
+     "id": "osm:node/2388707906",
+     "category": "gallery"
+    }
+   ],
+   "hit5_category": true,
+   "violations": [],
+   "model_tokens": {
+    "prompt": 1344,
+    "output": 231,
+    "done_reason": "stop"
+   },
+   "model_items_rejected": 0,
+   "model_items_accepted": 2,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 2.0,
+    "generation": 8414.1,
+    "planning": 14.1
+   },
+   "retrieval_mode": "lexical",
+   "samples": [
+    {
+     "names": {
+      "kk": "Көрме [original]",
+      "ru": "Корме [osm]",
+      "en": "Korme [osm]"
+     },
+     "category": "gallery",
+     "text_source": "ai",
+     "why": "Галерея, мұражай түрінде; әртүрлі әріптерді қарастыруға мүмкіндік береді",
+     "activity": "Көрме галереясында әртүрлі әріптерді қарастыру",
+     "warnings": []
+    },
+    {
+     "names": {
+      "kk": "Астана-Экспо КС [original]",
+      "ru": "Астана-Экспо КС [original]",
+      "en": "Астана-Экспо КС [original]"
+     },
+     "category": "gallery",
+     "text_source": "ai",
+     "why": "Галерея, мұражай түрінде; әртүрлі әріптерді қарастыруға мүмкіндік береді",
+     "activity": "Астана-Экспо КС-те әртүрлі әріптерді қарастыру",
+     "warnings": []
+    }
+   ],
+   "names_all_langs": true
+  },
+  {
+   "id": "en03",
+   "lang": "en",
+   "tags": [
+    "negation"
+   ],
+   "start_used": "SIMULATED point: EXPO / Astana IT University area (the collector's default centre) (51.089, 71.416)",
+   "planning_time": "14:30",
+   "start_kind": "simulated",
+   "status": 200,
+   "seconds_total": 4.508,
+   "clarify_ok": null,
+   "top5": [
+    {
+     "id": "osm:way/1460763574",
+     "name": "Тәуелсіздіктің 25 жылдығы",
+     "category": "attraction"
+    }
+   ],
+   "plan": [
+    {
+     "id": "osm:way/1460763574",
+     "category": "attraction"
+    }
+   ],
+   "hit5_category": true,
+   "violations": [],
+   "model_tokens": {
+    "prompt": 602,
+    "output": 51,
+    "done_reason": "stop"
+   },
+   "model_items_rejected": 0,
+   "model_items_accepted": 1,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 1.6,
+    "generation": 4360.8,
+    "planning": 1.0
+   },
+   "retrieval_mode": "lexical",
+   "samples": [
+    {
+     "names": {
+      "kk": "Тәуелсіздіктің 25 жылдығы [original]",
+      "ru": "25-ти летие Независимости [osm]",
+      "en": "25th Anniversary of Independence [osm]"
+     },
+     "category": "attraction",
+     "text_source": "ai",
+     "why": "It is an indoor attraction, so it avoids outdoor parks.",
+     "activity": "Explore the attraction",
+     "warnings": []
+    }
+   ],
+   "names_all_langs": true
+  },
+  {
+   "id": "kk03",
+   "lang": "kk",
+   "tags": [
+    "negation",
+    "kazakh_suffix"
+   ],
+   "start_used": "SIMULATED point: EXPO / Astana IT University area (the collector's default centre) (51.089, 71.416)",
+   "planning_time": "14:30",
+   "start_kind": "simulated",
+   "status": 200,
+   "seconds_total": 6.847,
+   "clarify_ok": null,
+   "top5": [
+    {
+     "id": "osm:way/1456208624",
+     "name": "Бейбітшілік пен Келісім аллеясы",
+     "category": "park"
+    },
+    {
+     "id": "osm:way/1467797207",
+     "name": "NU Park",
+     "category": "park"
+    },
+    {
+     "id": "osm:way/1460763574",
+     "name": "Тәуелсіздіктің 25 жылдығы",
+     "category": "attraction"
+    }
+   ],
+   "plan": [
+    {
+     "id": "osm:way/1460763574",
+     "category": "attraction"
+    }
+   ],
+   "hit5_category": true,
+   "violations": [],
+   "model_tokens": {
+    "prompt": 974,
+    "output": 170,
+    "done_reason": "stop"
+   },
+   "model_items_rejected": 0,
+   "model_items_accepted": 1,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 2.0,
+    "generation": 6708.5,
+    "planning": 2.1
+   },
+   "retrieval_mode": "lexical",
+   "samples": [
+    {
+     "names": {
+      "kk": "Тәуелсіздіктің 25 жылдығы [original]",
+      "ru": "25-ти летие Независимости [osm]",
+      "en": "25th Anniversary of Independence [osm]"
+     },
+     "category": "attraction",
+     "text_source": "ai",
+     "why": "Бұл қорытынды орын, ішкі жерде жатады және 60 минут ішінде жүріп өтіп, бастапқы нүктеге қайтуға болады.",
+     "activity": "Көрікті орында қайталау жасау",
+     "warnings": []
+    }
+   ],
+   "names_all_langs": true
+  },
+  {
+   "id": "en04",
+   "lang": "en",
+   "tags": [
+    "named_place"
+   ],
+   "start_used": "Mega Silk Way",
+   "planning_time": "14:30",
+   "start_kind": "named",
+   "status": 200,
+   "seconds_total": 5.828,
+   "clarify_ok": null,
+   "top5": [
+    {
+     "id": "osm:way/1467797207",
+     "name": "NU Park",
+     "category": "park"
+    },
+    {
+     "id": "osm:way/1460763574",
+     "name": "Тәуелсіздіктің 25 жылдығы",
+     "category": "attraction"
+    },
+    {
+     "id": "osm:way/1196402246",
+     "name": "Ботаникалық бақ",
+     "category": "park"
+    },
+    {
+     "id": "osm:way/549307755",
+     "name": "Мәңгілік Ел салтанат қақпасы",
+     "category": "attraction"
+    },
+    {
+     "id": "osm:way/1462136136",
+     "name": "Тайқазан",
+     "category": "fountain"
+    }
+   ],
+   "plan": [
+    {
+     "id": "osm:way/549307755",
+     "category": "attraction"
+    }
+   ],
+   "named_in_dataset": true,
+   "named_excluded": {
+    "osm:way/230401645": "too_far"
+   },
+   "hit5_named": null,
+   "named_unreachable_explained": true,
+   "violations": [],
+   "model_tokens": {
+    "prompt": 1378,
+    "output": 114,
+    "done_reason": "stop"
+   },
+   "model_items_rejected": 0,
+   "model_items_accepted": 1,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 3.0,
+    "generation": 5648.0,
+    "planning": 39.5
+   },
+   "retrieval_mode": "lexical",
+   "samples": [
+    {
+     "names": {
+      "kk": "Мәңгілік ел қақпасы [wikidata]",
+      "ru": "Триумфальная арка Мангилик Ел [osm]",
+      "en": "Mäñgilik El Triumphal Arch [osm]"
+     },
+     "category": "attraction",
+     "text_source": "ai",
+     "why": "Baiterek is a major landmark in Astana, and this entry matches the request directly.",
+     "activity": "Visit the Baiterek monument at the center of Astana",
+     "warnings": []
+    }
+   ],
+   "names_all_langs": true
+  },
+  {
+   "id": "ru04",
+   "lang": "ru",
+   "tags": [
+    "named_place",
+    "alias"
+   ],
+   "start_used": "Mega Silk Way",
+   "planning_time": "14:30",
+   "start_kind": "named",
+   "status": 200,
+   "seconds_total": 3.996,
+   "clarify_ok": null,
+   "top5": [
+    {
+     "id": "osm:way/1460763574",
+     "name": "Тәуелсіздіктің 25 жылдығы",
+     "category": "attraction"
+    },
+    {
+     "id": "osm:way/549307755",
+     "name": "Мәңгілік Ел салтанат қақпасы",
+     "category": "attraction"
+    },
+    {
+     "id": "osm:way/734476104",
+     "name": "Буран",
+     "category": "artwork"
+    },
+    {
+     "id": "osm:relation/20321069",
+     "name": "Макет ракеты-носителя Зенит",
+     "category": "artwork"
+    }
+   ],
+   "plan": [],
+   "named_in_dataset": true,
+   "named_excluded": {
+    "osm:way/460703779": "too_far"
+   },
+   "hit5_named": null,
+   "named_unreachable_explained": true,
+   "violations": [],
+   "empty": true,
+   "suggestions": [
+    "add_time",
+    "any_category",
+    "change_start"
+   ],
+   "empty_kind": "no_feasible_place",
+   "model_tokens": {
+    "prompt": 1087,
+    "output": 46,
+    "done_reason": "stop"
+   },
+   "model_items_rejected": 0,
+   "model_items_accepted": 0,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 1.7,
+    "generation": 3858.5
+   },
+   "retrieval_mode": "lexical",
+   "samples": [],
+   "names_all_langs": true
+  },
+  {
+   "id": "kk04",
+   "lang": "kk",
+   "tags": [
+    "named_place",
+    "spelling_variant"
+   ],
+   "start_used": "Mega Silk Way",
+   "planning_time": "14:30",
+   "start_kind": "named",
+   "status": 200,
+   "seconds_total": 6.583,
+   "clarify_ok": null,
+   "top5": [
+    {
+     "id": "osm:way/1467797207",
+     "name": "NU Park",
+     "category": "park"
+    },
+    {
+     "id": "osm:way/1460763574",
+     "name": "Тәуелсіздіктің 25 жылдығы",
+     "category": "attraction"
+    },
+    {
+     "id": "osm:way/1196402246",
+     "name": "Ботаникалық бақ",
+     "category": "park"
+    },
+    {
+     "id": "osm:way/549307755",
+     "name": "Мәңгілік Ел салтанат қақпасы",
+     "category": "attraction"
+    },
+    {
+     "id": "osm:way/1462136136",
+     "name": "Тайқазан",
+     "category": "fountain"
+    }
+   ],
+   "plan": [
+    {
+     "id": "osm:way/549307755",
+     "category": "attraction"
+    }
+   ],
+   "named_in_dataset": true,
+   "named_excluded": {},
+   "hit5_named": false,
+   "named_unreachable_explained": null,
+   "violations": [],
+   "model_tokens": {
+    "prompt": 1645,
+    "output": 140,
+    "done_reason": "stop"
+   },
+   "model_items_rejected": 0,
+   "model_items_accepted": 1,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 2.1,
+    "generation": 6315.5,
+    "planning": 95.1
+   },
+   "retrieval_mode": "lexical",
+   "samples": [
+    {
+     "names": {
+      "kk": "Мәңгілік ел қақпасы [wikidata]",
+      "ru": "Триумфальная арка Мангилик Ел [osm]",
+      "en": "Mäñgilik El Triumphal Arch [osm]"
+     },
+     "category": "attraction",
+     "text_source": "ai",
+     "why": "Мәңгілік ел қақпасы Хазірет Сұлтан мешітінің жағында орналасқан",
+     "activity": "Нұрсұлтан Назарбаевтың ескерткішін қараңыз",
+     "warnings": []
+    }
+   ],
+   "names_all_langs": true
+  },
+  {
+   "id": "en05",
+   "lang": "en",
+   "tags": [
+    "unsupported"
+   ],
+   "start_used": "SIMULATED point: EXPO / Astana IT University area (the collector's default centre) (51.089, 71.416)",
+   "planning_time": "14:30",
+   "start_kind": "simulated",
+   "status": 200,
+   "seconds_total": 5.009,
+   "clarify_ok": null,
+   "top5": [
+    {
+     "id": "osm:node/9047331879",
+     "name": "Starbucks",
+     "category": "cafe"
+    },
+    {
+     "id": "osm:node/12990081501",
+     "name": "Discovery Coffee",
+     "category": "cafe"
+    }
+   ],
+   "plan": [
+    {
+     "id": "osm:node/9047331879",
+     "category": "cafe"
+    }
+   ],
+   "hit5_category": true,
+   "violations": [],
+   "unknown_reported": true,
+   "model_tokens": {
+    "prompt": 805,
+    "output": 65,
+    "done_reason": "stop"
+   },
+   "model_items_rejected": 0,
+   "model_items_accepted": 1,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 5.5,
+    "generation": 4560.1,
+    "planning": 2.9
+   },
+   "retrieval_mode": "lexical",
+   "samples": [
+    {
+     "names": {
+      "kk": "Starbucks [original]",
+      "ru": "Starbucks [original]",
+      "en": "Starbucks [osm]"
+     },
+     "category": "cafe",
+     "text_source": "ai",
+     "why": "It is a cafe with coffee, and indoor.",
+     "activity": "Work at a table with a coffee",
+     "warnings": []
+    }
+   ],
+   "names_all_langs": true
+  },
+  {
+   "id": "ru05",
+   "lang": "ru",
+   "tags": [
+    "unsupported",
+    "paraphrase_of:en05"
+   ],
+   "start_used": "SIMULATED point: EXPO / Astana IT University area (the collector's default centre) (51.089, 71.416)",
+   "planning_time": "14:30",
+   "start_kind": "simulated",
+   "status": 200,
+   "seconds_total": 4.752,
+   "clarify_ok": null,
+   "top5": [
+    {
+     "id": "osm:node/9047331879",
+     "name": "Starbucks",
+     "category": "cafe"
+    },
+    {
+     "id": "osm:node/12990081501",
+     "name": "Discovery Coffee",
+     "category": "cafe"
+    }
+   ],
+   "plan": [
+    {
+     "id": "osm:node/9047331879",
+     "category": "cafe"
+    }
+   ],
+   "hit5_category": true,
+   "violations": [],
+   "unknown_reported": true,
+   "model_tokens": {
+    "prompt": 843,
+    "output": 82,
+    "done_reason": "stop"
+   },
+   "model_items_rejected": 0,
+   "model_items_accepted": 1,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 3.5,
+    "generation": 4450.2,
+    "planning": 2.9
+   },
+   "retrieval_mode": "lexical",
+   "samples": [
+    {
+     "names": {
+      "kk": "Starbucks [original]",
+      "ru": "Starbucks [original]",
+      "en": "Starbucks [osm]"
+     },
+     "category": "cafe",
+     "text_source": "ai",
+     "why": "Кафе с кофе, находится в помещении. Открыто сейчас.",
+     "activity": "Поработать над заданием",
+     "warnings": []
+    }
+   ],
+   "names_all_langs": true
+  },
+  {
+   "id": "kk05",
+   "lang": "kk",
+   "tags": [
+    "unsupported",
+    "paraphrase_of:en05"
+   ],
+   "start_used": "SIMULATED point: EXPO / Astana IT University area (the collector's default centre) (51.089, 71.416)",
+   "planning_time": "14:30",
+   "start_kind": "simulated",
+   "status": 200,
+   "seconds_total": 6.076,
+   "clarify_ok": null,
+   "top5": [
+    {
+     "id": "osm:node/6408255389",
+     "name": "завтрак бар",
+     "category": "cafe"
+    },
+    {
+     "id": "osm:node/9047331879",
+     "name": "Starbucks",
+     "category": "cafe"
+    }
+   ],
+   "plan": [
+    {
+     "id": "osm:node/9047331879",
+     "category": "cafe"
+    }
+   ],
+   "hit5_category": true,
+   "violations": [],
+   "unknown_reported": true,
+   "model_tokens": {
+    "prompt": 903,
+    "output": 120,
+    "done_reason": "stop"
+   },
+   "model_items_rejected": 0,
+   "model_items_accepted": 1,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 6.8,
+    "generation": 5551.1,
+    "planning": 2.8
+   },
+   "retrieval_mode": "lexical",
+   "samples": [
+    {
+     "names": {
+      "kk": "Starbucks [original]",
+      "ru": "Starbucks [original]",
+      "en": "Starbucks [osm]"
+     },
+     "category": "cafe",
+     "text_source": "ai",
+     "why": "Кафе, қолданылатын және жұмыс істеу үшін ыңғайлы",
+     "activity": "Кафеға келіп, жұмыс істеу үшін қолдану",
+     "warnings": []
+    }
+   ],
+   "names_all_langs": true
+  },
+  {
+   "id": "en06",
+   "lang": "en",
+   "tags": [
+    "short_window"
+   ],
+   "start_used": "Хан Шатыр",
+   "planning_time": "14:30",
+   "start_kind": "named",
+   "status": 200,
+   "seconds_total": 4.811,
+   "clarify_ok": null,
+   "top5": [
+    {
+     "id": "osm:way/1449322329",
+     "name": "Конвой",
+     "category": "attraction"
+    },
+    {
+     "id": "osm:way/1449322339",
+     "name": "Динопарк",
+     "category": "attraction"
+    },
+    {
+     "id": "osm:node/4958412863",
+     "name": "Zur Sultan",
+     "category": "artwork"
+    },
+    {
+     "id": "osm:node/13333409377",
+     "name": "Махтумкули Фраги",
+     "category": "artwork"
+    }
+   ],
+   "plan": [
+    {
+     "id": "osm:way/1449322329",
+     "category": "attraction"
+    }
+   ],
+   "hit5_category": true,
+   "violations": [],
+   "model_tokens": {
+    "prompt": 973,
+    "output": 53,
+    "done_reason": "stop"
+   },
+   "model_items_rejected": 0,
+   "model_items_accepted": 1,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 6.6,
+    "generation": 4226.2,
+    "planning": 9.2
+   },
+   "retrieval_mode": "lexical",
+   "samples": [
+    {
+     "names": {
+      "kk": "Конвой [original]",
+      "ru": "Конвой [original]",
+      "en": "Конвой [original]"
+     },
+     "category": "attraction",
+     "text_source": "ai",
+     "why": "Close to starting point and indoor, suitable for a quick walk.",
+     "activity": "Visit the attraction briefly",
+     "warnings": []
+    }
+   ],
+   "names_all_langs": true
+  },
+  {
+   "id": "ru06",
+   "lang": "ru",
+   "tags": [
+    "deadline",
+    "return"
+   ],
+   "start_used": "Бәйтерек",
+   "planning_time": "14:30",
+   "start_kind": "named",
+   "status": 200,
+   "seconds_total": 4.566,
+   "clarify_ok": null,
+   "top5": [
+    {
+     "id": "osm:way/230358854",
+     "name": "Сквер",
+     "category": "park"
+    },
+    {
+     "id": "osm:way/258753491",
+     "name": "Әнші субұрқақтар",
+     "category": "fountain"
+    }
+   ],
+   "plan": [
+    {
+     "id": "osm:way/230358854",
+     "category": "park"
+    }
+   ],
+   "hit5_category": true,
+   "violations": [],
+   "model_tokens": {
+    "prompt": 745,
+    "output": 64,
+    "done_reason": "stop"
+   },
+   "model_items_rejected": 0,
+   "model_items_accepted": 1,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 4.1,
+    "generation": 4139.7,
+    "planning": 1.5
+   },
+   "retrieval_mode": "lexical",
+   "samples": [
+    {
+     "names": {
+      "kk": "Сквер [original]",
+      "ru": "Сквер [original]",
+      "en": "Сквер [original]"
+     },
+     "category": "park",
+     "text_source": "ai",
+     "why": "Парк близок к Байтереку и подходит для прогулки.",
+     "activity": "Прогуляться по парку",
+     "warnings": []
+    }
+   ],
+   "names_all_langs": true
+  },
+  {
+   "id": "en07",
+   "lang": "en",
+   "tags": [
+    "group",
+    "slow_pace"
+   ],
+   "start_used": "SIMULATED point: EXPO / Astana IT University area (the collector's default centre) (51.089, 71.416)",
+   "planning_time": "14:30",
+   "start_kind": "simulated",
+   "status": 200,
+   "seconds_total": 5.922,
+   "clarify_ok": null,
+   "top5": [
+    {
+     "id": "osm:way/1452597370",
+     "name": "Детская площадка (без названия в OSM)",
+     "category": "playground"
+    },
+    {
+     "id": "osm:node/9047331879",
+     "name": "Starbucks",
+     "category": "cafe"
+    },
+    {
+     "id": "osm:way/1456208624",
+     "name": "Бейбітшілік пен Келісім аллеясы",
+     "category": "park"
+    },
+    {
+     "id": "osm:node/12990081501",
+     "name": "Discovery Coffee",
+     "category": "cafe"
+    },
+    {
+     "id": "osm:way/1467797207",
+     "name": "NU Park",
+     "category": "park"
+    }
+   ],
+   "plan": [
+    {
+     "id": "osm:way/1452597370",
+     "category": "playground"
+    },
+    {
+     "id": "osm:node/9047331879",
+     "category": "cafe"
+    }
+   ],
+   "hit5_category": true,
+   "violations": [],
+   "model_tokens": {
+    "prompt": 1158,
+    "output": 126,
+    "done_reason": "stop"
+   },
+   "model_items_rejected": 0,
+   "model_items_accepted": 2,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 7.1,
+    "generation": 5836.8,
+    "planning": 51.8
+   },
+   "retrieval_mode": "lexical",
+   "samples": [
+    {
+     "names": {
+      "kk": "Балалар алаңы (OSM-де атауы жоқ) [generated]",
+      "ru": "Детская площадка (без названия в OSM) [generated]",
+      "en": "Playground (no name in OpenStreetMap) [generated]"
+     },
+     "category": "playground",
+     "text_source": "ai",
+     "why": "It is a dedicated playground for children. Close to starting point.",
+     "activity": "Let kids play on the playground equipment",
+     "warnings": []
+    },
+    {
+     "names": {
+      "kk": "Starbucks [original]",
+      "ru": "Starbucks [original]",
+      "en": "Starbucks [osm]"
+     },
+     "category": "cafe",
+     "text_source": "ai",
+     "why": "It is a coffee cafe suitable for someone with kids. Near the playground.",
+     "activity": "Enjoy coffee in a cafe with kids-friendly atmosphere",
+     "warnings": []
+    }
+   ],
+   "names_all_langs": true
+  },
+  {
+   "id": "ru07",
+   "lang": "ru",
+   "tags": [
+    "family",
+    "slow_pace"
+   ],
+   "start_used": "SIMULATED point: EXPO / Astana IT University area (the collector's default centre) (51.089, 71.416)",
+   "planning_time": "14:30",
+   "start_kind": "simulated",
+   "status": 200,
+   "seconds_total": 5.302,
+   "clarify_ok": null,
+   "top5": [
+    {
+     "id": "osm:way/1452597370",
+     "name": "Детская площадка (без названия в OSM)",
+     "category": "playground"
+    },
+    {
+     "id": "osm:way/1456208624",
+     "name": "Бейбітшілік пен Келісім аллеясы",
+     "category": "park"
+    }
+   ],
+   "plan": [
+    {
+     "id": "osm:way/1452597370",
+     "category": "playground"
+    }
+   ],
+   "hit5_category": true,
+   "violations": [],
+   "model_tokens": {
+    "prompt": 743,
+    "output": 90,
+    "done_reason": "stop"
+   },
+   "model_items_rejected": 0,
+   "model_items_accepted": 1,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 5.6,
+    "generation": 4810.4,
+    "planning": 4.9
+   },
+   "retrieval_mode": "lexical",
+   "samples": [
+    {
+     "names": {
+      "kk": "Балалар алаңы (OSM-де атауы жоқ) [generated]",
+      "ru": "Детская площадка (без названия в OSM) [generated]",
+      "en": "Playground (no name in OpenStreetMap) [generated]"
+     },
+     "category": "playground",
+     "text_source": "ai",
+     "why": "Это детская площадка, подходит для детей.",
+     "activity": "Играть на детской площадке",
+     "warnings": []
+    }
+   ],
+   "names_all_langs": true
+  },
+  {
+   "id": "en08",
+   "lang": "en",
+   "tags": [
+    "outdoor_cap",
+    "weather"
+   ],
+   "start_used": "Хан Шатыр",
+   "planning_time": "14:30",
+   "start_kind": "named",
+   "status": 200,
+   "seconds_total": 6.164,
+   "clarify_ok": null,
+   "top5": [
+    {
+     "id": "osm:way/1449301315",
+     "name": "Starbucks",
+     "category": "cafe"
+    },
+    {
+     "id": "osm:way/1449295053",
+     "name": "Cups coffee",
+     "category": "cafe"
+    }
+   ],
+   "plan": [
+    {
+     "id": "osm:way/1449301315",
+     "category": "cafe"
+    },
+    {
+     "id": "osm:way/1449295053",
+     "category": "cafe"
+    }
+   ],
+   "hit5_category": true,
+   "violations": [],
+   "model_tokens": {
+    "prompt": 745,
+    "output": 128,
+    "done_reason": "stop"
+   },
+   "model_items_rejected": 0,
+   "model_items_accepted": 2,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 5.8,
+    "generation": 5689.7,
+    "planning": 5.8
+   },
+   "retrieval_mode": "lexical",
+   "samples": [
+    {
+     "names": {
+      "kk": "Starbucks [original]",
+      "ru": "Starbucks [original]",
+      "en": "Starbucks [original]"
+     },
+     "category": "cafe",
+     "text_source": "ai",
+     "why": "It's freezing outside, and this indoor cafe offers warmth and comfort.",
+     "activity": "Enjoy a warm coffee in a cozy indoor cafe.",
+     "warnings": []
+    },
+    {
+     "names": {
+      "kk": "Cups coffee [original]",
+      "ru": "Cups coffee [original]",
+      "en": "Cups coffee [original]"
+     },
+     "category": "cafe",
+     "text_source": "ai",
+     "why": "It's freezing outside, and this indoor cafe offers warmth and comfort.",
+     "activity": "Enjoy a warm coffee in a cozy indoor cafe.",
+     "warnings": []
+    }
+   ],
+   "names_all_langs": true
+  },
+  {
+   "id": "kk08",
+   "lang": "kk",
+   "tags": [
+    "outdoor_cap",
+    "weather"
+   ],
+   "start_used": "Хан Шатыр",
+   "planning_time": "14:30",
+   "start_kind": "named",
+   "status": 200,
+   "seconds_total": 5.685,
+   "clarify_ok": null,
+   "top5": [
+    {
+     "id": "osm:way/1449301315",
+     "name": "Starbucks",
+     "category": "cafe"
+    },
+    {
+     "id": "osm:way/1449295053",
+     "name": "Cups coffee",
+     "category": "cafe"
+    }
+   ],
+   "plan": [
+    {
+     "id": "osm:way/1449301315",
+     "category": "cafe"
+    }
+   ],
+   "hit5_category": true,
+   "violations": [],
+   "model_tokens": {
+    "prompt": 822,
+    "output": 102,
+    "done_reason": "stop"
+   },
+   "model_items_rejected": 0,
+   "model_items_accepted": 1,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 7.0,
+    "generation": 5094.3,
+    "planning": 2.6
+   },
+   "retrieval_mode": "lexical",
+   "samples": [
+    {
+     "names": {
+      "kk": "Starbucks [original]",
+      "ru": "Starbucks [original]",
+      "en": "Starbucks [original]"
+     },
+     "category": "cafe",
+     "text_source": "ai",
+     "why": "Бұл үйдің ішінде жылы жер керек",
+     "activity": "Суық жерде қалыпты жылы жер керек, бұл күнде қалыпты жылы жер керек",
+     "warnings": []
+    }
+   ],
+   "names_all_langs": true
+  },
+  {
+   "id": "en09",
+   "lang": "en",
+   "tags": [
+    "accessibility",
+    "may_be_empty"
+   ],
+   "start_used": "SIMULATED point: EXPO / Astana IT University area (the collector's default centre) (51.089, 71.416)",
+   "planning_time": "14:30",
+   "start_kind": "simulated",
+   "status": 200,
+   "seconds_total": 0.478,
+   "clarify_ok": null,
+   "top5": [],
+   "plan": [],
+   "hit5_category": null,
+   "expected_type_in_dataset_passing_filters": 3,
+   "excluded_by_code": {
+    "category": 435,
+    "no_wheelchair_info": 64,
+    "too_far": 5
+   },
+   "hit5_na_reason": "hard filter left no eligible place (see excluded_by_code)",
+   "violations": [],
+   "empty": true,
+   "suggestions": [
+    "add_time",
+    "drop_wheelchair_filter",
+    "any_category",
+    "change_start"
+   ],
+   "empty_kind": "no_feasible_place",
+   "model_items_rejected": 0,
+   "model_items_accepted": 0,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 4.3
+   },
+   "retrieval_mode": "lexical",
+   "samples": [],
+   "names_all_langs": true
+  },
+  {
+   "id": "ru09",
+   "lang": "ru",
+   "tags": [
+    "hours_filter"
+   ],
+   "start_used": "SIMULATED point: EXPO / Astana IT University area (the collector's default centre) (51.089, 71.416)",
+   "planning_time": "14:30",
+   "start_kind": "simulated",
+   "status": 200,
+   "seconds_total": 5.316,
+   "clarify_ok": null,
+   "top5": [
+    {
+     "id": "osm:node/9047331879",
+     "name": "Starbucks",
+     "category": "cafe"
+    },
+    {
+     "id": "osm:node/14275682079",
+     "name": "Drinkit",
+     "category": "cafe"
+    }
+   ],
+   "plan": [
+    {
+     "id": "osm:node/9047331879",
+     "category": "cafe"
+    }
+   ],
+   "hit5_category": true,
+   "violations": [],
+   "model_tokens": {
+    "prompt": 862,
+    "output": 88,
+    "done_reason": "stop"
+   },
+   "model_items_rejected": 0,
+   "model_items_accepted": 1,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 4.8,
+    "generation": 4823.2,
+    "planning": 4.3
+   },
+   "retrieval_mode": "lexical",
+   "samples": [
+    {
+     "names": {
+      "kk": "Starbucks [original]",
+      "ru": "Starbucks [original]",
+      "en": "Starbucks [osm]"
+     },
+     "category": "cafe",
+     "text_source": "ai",
+     "why": "Это кафе по типу кофейни. Открыто по данным OpenStreetMap.",
+     "activity": "Пить кофе",
+     "warnings": []
+    }
+   ],
+   "names_all_langs": true
+  },
+  {
+   "id": "en10",
+   "lang": "en",
+   "tags": [
+    "impossible"
+   ],
+   "start_used": "SIMULATED point: EXPO / Astana IT University area (the collector's default centre) (51.089, 71.416)",
+   "planning_time": "14:30",
+   "start_kind": "simulated",
+   "status": 200,
+   "seconds_total": 0.646,
+   "clarify_ok": null,
+   "top5": [],
+   "plan": [],
+   "violations": [],
+   "empty": true,
+   "suggestions": [
+    "add_time",
+    "any_category",
+    "change_start"
+   ],
+   "empty_kind": "no_feasible_place",
+   "model_items_rejected": 0,
+   "model_items_accepted": 0,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 4.2
+   },
+   "retrieval_mode": "lexical",
+   "samples": [],
+   "names_all_langs": true
+  },
+  {
+   "id": "ru10",
+   "lang": "ru",
+   "tags": [
+    "ambiguous_start"
+   ],
+   "start_used": "Mega Silk Way",
+   "planning_time": "14:30",
+   "start_kind": "named",
+   "status": 200,
+   "seconds_total": 0.413,
+   "clarify": "start_conflict",
+   "clarify_ok": true,
+   "top5": [],
+   "plan": [],
+   "violations": [],
+   "model_items_rejected": 0,
+   "model_items_accepted": 0,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": null,
+   "retrieval_mode": null,
+   "samples": [],
+   "names_all_langs": true
+  },
+  {
+   "id": "en11",
+   "lang": "en",
+   "tags": [
+    "prompt_injection"
+   ],
+   "start_used": "SIMULATED point: EXPO / Astana IT University area (the collector's default centre) (51.089, 71.416)",
+   "planning_time": "14:30",
+   "start_kind": "simulated",
+   "status": 200,
+   "seconds_total": 4.771,
+   "clarify_ok": null,
+   "top5": [
+    {
+     "id": "osm:node/9047331879",
+     "name": "Starbucks",
+     "category": "cafe"
+    },
+    {
+     "id": "osm:node/12990081501",
+     "name": "Discovery Coffee",
+     "category": "cafe"
+    }
+   ],
+   "plan": [
+    {
+     "id": "osm:node/9047331879",
+     "category": "cafe"
+    }
+   ],
+   "hit5_category": true,
+   "violations": [],
+   "model_tokens": {
+    "prompt": 807,
+    "output": 64,
+    "done_reason": "stop"
+   },
+   "model_items_rejected": 0,
+   "model_items_accepted": 1,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 6.1,
+    "generation": 4137.6,
+    "planning": 3.5
+   },
+   "retrieval_mode": "lexical",
+   "samples": [
+    {
+     "names": {
+      "kk": "Starbucks [original]",
+      "ru": "Starbucks [original]",
+      "en": "Starbucks [osm]"
+     },
+     "category": "cafe",
+     "text_source": "ai",
+     "why": "It is a coffee shop and easily accessible.",
+     "activity": "Enjoy a cup of coffee at a cozy cafe",
+     "warnings": []
+    }
+   ],
+   "names_all_langs": true
+  },
+  {
+   "id": "kk11",
+   "lang": "kk",
+   "tags": [
+    "multi_intent",
+    "sequence"
+   ],
+   "start_used": "Бәйтерек",
+   "planning_time": "14:30",
+   "start_kind": "named",
+   "status": 200,
+   "seconds_total": 16.577,
+   "clarify_ok": null,
+   "top5": [
+    {
+     "id": "osm:way/230358854",
+     "name": "Сквер",
+     "category": "park"
+    },
+    {
+     "id": "osm:node/13858040201",
+     "name": "Master Coffee",
+     "category": "cafe"
+    },
+    {
+     "id": "osm:node/14100100182",
+     "name": "Drinkit",
+     "category": "cafe"
+    },
+    {
+     "id": "osm:way/69232075",
+     "name": "Жетісу саябағы",
+     "category": "park"
+    },
+    {
+     "id": "osm:way/258753491",
+     "name": "Әнші субұрқақтар",
+     "category": "fountain"
+    }
+   ],
+   "plan": [
+    {
+     "id": "osm:node/13858040201",
+     "category": "cafe"
+    },
+    {
+     "id": "osm:way/258753491",
+     "category": "fountain"
+    }
+   ],
+   "hit5_category": true,
+   "violations": [],
+   "model_tokens": {
+    "prompt": 1596,
+    "output": 235,
+    "done_reason": "stop"
+   },
+   "model_items_rejected": 0,
+   "model_items_accepted": 2,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 5.5,
+    "generation": 9983.5,
+    "planning": 104.4
+   },
+   "retrieval_mode": "lexical",
+   "samples": [
+    {
+     "names": {
+      "kk": "Master Coffee [original]",
+      "ru": "Master Coffee [original]",
+      "en": "Master Coffee [original]"
+     },
+     "category": "cafe",
+     "text_source": "ai",
+     "why": "Кофе үшін жақын және ашық. Қайта қайтадан қалып қойыңыз үшін жақын.",
+     "activity": "Кофе ішіп, қайта қайтадан қалып қойыңыз",
+     "warnings": []
+    },
+    {
+     "names": {
+      "kk": "Әнші субұрқақтар [original]",
+      "ru": "Поющий фонтан [osm]",
+      "en": "Әнші субұрқақтар [original]"
+     },
+     "category": "fountain",
+     "text_source": "ai",
+     "why": "340 метр арақашы, 6 минут жүріп өтіңіз. Көптеген кофе үшін жақын жерде жатады, саябақта серуен үшін тиімді басқа жерлерге қарауға болады",
+     "activity": "Субұрқақта әрі қарай жүріп өтіңіз",
+     "warnings": []
+    }
+   ],
+   "names_all_langs": true
+  },
+  {
+   "id": "en12",
+   "lang": "en",
+   "tags": [
+    "replacement"
+   ],
+   "start_used": "Бәйтерек",
+   "planning_time": "14:30",
+   "start_kind": "named",
+   "status": 200,
+   "seconds_total": 8.989,
+   "clarify_ok": null,
+   "top5": [
+    {
+     "id": "osm:way/549307755",
+     "name": "Мәңгілік Ел салтанат қақпасы",
+     "category": "attraction"
+    },
+    {
+     "id": "osm:node/14087643081",
+     "name": "Жылқылар үйірі",
+     "category": "attraction"
+    },
+    {
+     "id": "osm:way/963855443",
+     "name": "Назарбаев орталығы-2",
+     "category": "museum"
+    },
+    {
+     "id": "osm:way/230358847",
+     "name": "Көрме",
+     "category": "gallery"
+    },
+    {
+     "id": "osm:node/2388707906",
+     "name": "Астана-Экспо КС",
+     "category": "gallery"
+    }
+   ],
+   "plan": [
+    {
+     "id": "osm:way/549307755",
+     "category": "attraction"
+    }
+   ],
+   "hit5_category": true,
+   "violations": [],
+   "model_tokens": {
+    "prompt": 1351,
+    "output": 225,
+    "done_reason": "stop"
+   },
+   "model_items_rejected": 0,
+   "model_items_accepted": 1,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 6.9,
+    "generation": 8431.6,
+    "planning": 104.2
+   },
+   "retrieval_mode": "lexical",
+   "samples": [
+    {
+     "names": {
+      "kk": "Мәңгілік ел қақпасы [wikidata]",
+      "ru": "Триумфальная арка Мангилик Ел [osm]",
+      "en": "Mäñgilik El Triumphal Arch [osm]"
+     },
+     "category": "attraction",
+     "text_source": "ai",
+     "why": "It is a famous landmark and a major monument in Astana, symbolizing national independence.",
+     "activity": "Visit the Mäñgilik El Triumphal Arch to see the 20-meter-tall monument marking Kazakhstan's 20th independence anniversary.",
+     "warnings": []
+    }
+   ],
+   "names_all_langs": true,
+   "replace": {
+    "ok": true,
+    "others_kept": true,
+    "within_budget": true
+   }
+  },
+  {
+   "id": "ru12",
+   "lang": "ru",
+   "tags": [
+    "active_walk",
+    "return_anchor"
+   ],
+   "start_used": "Бәйтерек",
+   "planning_time": "14:30",
+   "start_kind": "named",
+   "status": 200,
+   "seconds_total": 6.383,
+   "clarify_ok": null,
+   "top5": [
+    {
+     "id": "osm:way/230358854",
+     "name": "Сквер",
+     "category": "park"
+    },
+    {
+     "id": "osm:node/11131442511",
+     "name": "Espresso day",
+     "category": "cafe"
+    },
+    {
+     "id": "osm:node/12520559589",
+     "name": "Лепим и варим",
+     "category": "cafe"
+    },
+    {
+     "id": "osm:way/69232075",
+     "name": "Жетісу саябағы",
+     "category": "park"
+    },
+    {
+     "id": "osm:way/258753491",
+     "name": "Әнші субұрқақтар",
+     "category": "fountain"
+    }
+   ],
+   "plan": [
+    {
+     "id": "osm:way/230358854",
+     "category": "park"
+    },
+    {
+     "id": "osm:node/12520559589",
+     "category": "cafe"
+    }
+   ],
+   "hit5_category": true,
+   "violations": [],
+   "model_tokens": {
+    "prompt": 1369,
+    "output": 116,
+    "done_reason": "stop"
+   },
+   "model_items_rejected": 0,
+   "model_items_accepted": 2,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 7.8,
+    "generation": 5857.7,
+    "planning": 176.5
+   },
+   "retrieval_mode": "lexical",
+   "samples": [
+    {
+     "names": {
+      "kk": "Сквер [original]",
+      "ru": "Сквер [original]",
+      "en": "Сквер [original]"
+     },
+     "category": "park",
+     "text_source": "ai",
+     "why": "Это парк, где можно погулять. Близко от начальной точки.",
+     "activity": "Погулять в парке",
+     "warnings": []
+    },
+    {
+     "names": {
+      "kk": "Лепим и варим [original]",
+      "ru": "Лепим и варим [original]",
+      "en": "Лепим и варим [original]"
+     },
+     "category": "cafe",
+     "text_source": "ai",
+     "why": "Это кафе, где можно попробовать кофе. Близко от начальной точки.",
+     "activity": "Выпить кофе в кафе",
+     "warnings": []
+    }
+   ],
+   "names_all_langs": true,
+   "walk_replan": {
+    "ok": true,
+    "returns_to_original": true,
+    "within_remaining_time": true
+   }
+  },
+  {
+   "id": "en13",
+   "lang": "en",
+   "tags": [
+    "plan_styles"
+   ],
+   "start_used": "SIMULATED point: EXPO / Astana IT University area (the collector's default centre) (51.089, 71.416)",
+   "planning_time": "14:30",
+   "start_kind": "simulated",
+   "status": 200,
+   "seconds_total": 6.608,
+   "clarify_ok": null,
+   "top5": [
+    {
+     "id": "osm:way/1467797207",
+     "name": "NU Park",
+     "category": "park"
+    },
+    {
+     "id": "osm:node/9047331879",
+     "name": "Starbucks",
+     "category": "cafe"
+    },
+    {
+     "id": "osm:way/1456208624",
+     "name": "Бейбітшілік пен Келісім аллеясы",
+     "category": "park"
+    },
+    {
+     "id": "osm:node/12990081501",
+     "name": "Discovery Coffee",
+     "category": "cafe"
+    },
+    {
+     "id": "osm:way/1460763574",
+     "name": "Тәуелсіздіктің 25 жылдығы",
+     "category": "attraction"
+    }
+   ],
+   "plan": [
+    {
+     "id": "osm:node/9047331879",
+     "category": "cafe"
+    },
+    {
+     "id": "osm:way/1456208624",
+     "category": "park"
+    }
+   ],
+   "hit5_category": true,
+   "violations": [],
+   "model_tokens": {
+    "prompt": 1254,
+    "output": 128,
+    "done_reason": "stop"
+   },
+   "model_items_rejected": 0,
+   "model_items_accepted": 2,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 13.1,
+    "generation": 5995.1,
+    "planning": 182.5
+   },
+   "retrieval_mode": "lexical",
+   "samples": [
+    {
+     "names": {
+      "kk": "Starbucks [original]",
+      "ru": "Starbucks [original]",
+      "en": "Starbucks [osm]"
+     },
+     "category": "cafe",
+     "text_source": "ai",
+     "why": "It is a cafe offering coffee and is close to the starting point.",
+     "activity": "Enjoy a coffee at a cafe in the park.",
+     "warnings": []
+    },
+    {
+     "names": {
+      "kk": "Бейбітшілік пен келісім аллеясы [osm]",
+      "ru": "Аллея мира и согласия [osm]",
+      "en": "Бейбітшілік пен Келісім аллеясы [original]"
+     },
+     "category": "park",
+     "text_source": "ai",
+     "why": "It is a park suitable for walking and offers a green space.",
+     "activity": "Stroll through the park and enjoy the outdoor space.",
+     "warnings": []
+    }
+   ],
+   "names_all_langs": true,
+   "styles": {
+    "alternatives": 1,
+    "expected_at_least": 1,
+    "status": "ok",
+    "all_within_budget": true,
+    "all_distinct": true,
+    "ok": true
+   }
+  },
+  {
+   "id": "en14",
+   "lang": "en",
+   "tags": [
+    "official_scenario",
+    "flight"
+   ],
+   "start_used": "Бәйтерек",
+   "planning_time": "14:30",
+   "start_kind": "named",
+   "status": 200,
+   "seconds_total": 9.082,
+   "clarify_ok": null,
+   "top5": [
+    {
+     "id": "osm:way/549307755",
+     "name": "Мәңгілік Ел салтанат қақпасы",
+     "category": "attraction"
+    },
+    {
+     "id": "osm:node/14087643081",
+     "name": "Жылқылар үйірі",
+     "category": "attraction"
+    },
+    {
+     "id": "osm:way/963855443",
+     "name": "Назарбаев орталығы-2",
+     "category": "museum"
+    },
+    {
+     "id": "osm:way/230358847",
+     "name": "Көрме",
+     "category": "gallery"
+    },
+    {
+     "id": "osm:node/2388707906",
+     "name": "Астана-Экспо КС",
+     "category": "gallery"
+    }
+   ],
+   "plan": [
+    {
+     "id": "osm:way/549307755",
+     "category": "attraction"
+    }
+   ],
+   "hit5_category": true,
+   "violations": [],
+   "model_tokens": {
+    "prompt": 1358,
+    "output": 220,
+    "done_reason": "stop"
+   },
+   "notice_ok": true,
+   "model_items_rejected": 0,
+   "model_items_accepted": 1,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 1,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 11.1,
+    "generation": 8380.6,
+    "planning": 122.0
+   },
+   "retrieval_mode": "lexical",
+   "samples": [
+    {
+     "names": {
+      "kk": "Мәңгілік ел қақпасы [wikidata]",
+      "ru": "Триумфальная арка Мангилик Ел [osm]",
+      "en": "Mäñgilik El Triumphal Arch [osm]"
+     },
+     "category": "attraction",
+     "text_source": "ai",
+     "why": "It is a major landmark and symbol of national pride, suitable for a quick tourist stop.",
+     "activity": "",
+     "warnings": [
+      "ungrounded:ratings"
+     ]
+    }
+   ],
+   "names_all_langs": true
+  },
+  {
+   "id": "ru14",
+   "lang": "ru",
+   "tags": [
+    "official_scenario"
+   ],
+   "start_used": "Mega Silk Way",
+   "planning_time": "14:30",
+   "start_kind": "named",
+   "status": 200,
+   "seconds_total": 4.753,
+   "clarify_ok": null,
+   "top5": [
+    {
+     "id": "osm:way/1467797207",
+     "name": "NU Park",
+     "category": "park"
+    },
+    {
+     "id": "osm:way/1456208624",
+     "name": "Бейбітшілік пен Келісім аллеясы",
+     "category": "park"
+    },
+    {
+     "id": "osm:way/1460763574",
+     "name": "Тәуелсіздіктің 25 жылдығы",
+     "category": "attraction"
+    }
+   ],
+   "plan": [
+    {
+     "id": "osm:way/1467797207",
+     "category": "park"
+    }
+   ],
+   "hit5_category": true,
+   "violations": [],
+   "model_tokens": {
+    "prompt": 887,
+    "output": 66,
+    "done_reason": "stop"
+   },
+   "model_items_rejected": 0,
+   "model_items_accepted": 1,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 6.3,
+    "generation": 4348.6,
+    "planning": 2.6
+   },
+   "retrieval_mode": "lexical",
+   "samples": [
+    {
+     "names": {
+      "kk": "NU Park [original]",
+      "ru": "NU Park [original]",
+      "en": "NU Park [original]"
+     },
+     "category": "park",
+     "text_source": "ai",
+     "why": "Близко от Мега Силк Вей, парк подходит для прогулки.",
+     "activity": "Прогуляться по парку",
+     "warnings": []
+    }
+   ],
+   "names_all_langs": true
+  },
+  {
+   "id": "en15",
+   "lang": "en",
+   "tags": [
+    "official_scenario",
+    "night",
+    "unsupported"
+   ],
+   "start_used": "Хан Шатыр",
+   "planning_time": "23:30",
+   "start_kind": "named",
+   "status": 200,
+   "seconds_total": 4.757,
+   "clarify_ok": null,
+   "top5": [
+    {
+     "id": "osm:way/1449322329",
+     "name": "Конвой",
+     "category": "attraction"
+    },
+    {
+     "id": "osm:way/1449322339",
+     "name": "Динопарк",
+     "category": "attraction"
+    },
+    {
+     "id": "osm:node/2388707906",
+     "name": "Астана-Экспо КС",
+     "category": "gallery"
+    },
+    {
+     "id": "osm:way/230358847",
+     "name": "Көрме",
+     "category": "gallery"
+    },
+    {
+     "id": "osm:node/13340040666",
+     "name": "Қобызшы",
+     "category": "artwork"
+    }
+   ],
+   "plan": [],
+   "violations": [],
+   "unknown_reported": true,
+   "empty": true,
+   "suggestions": [
+    "add_time",
+    "any_category",
+    "hours_info",
+    "change_start"
+   ],
+   "empty_kind": "no_feasible_place",
+   "model_tokens": {
+    "prompt": 1281,
+    "output": 60,
+    "done_reason": "stop"
+   },
+   "model_items_rejected": 0,
+   "model_items_accepted": 0,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 6.6,
+    "generation": 4403.4
+   },
+   "retrieval_mode": "lexical",
+   "samples": [],
+   "names_all_langs": true
+  },
+  {
+   "id": "kk15",
+   "lang": "kk",
+   "tags": [
+    "official_scenario",
+    "family",
+    "interactive_claim"
+   ],
+   "start_used": "Хан Шатыр",
+   "planning_time": "14:30",
+   "start_kind": "named",
+   "status": 200,
+   "seconds_total": 8.233,
+   "clarify_ok": null,
+   "top5": [
+    {
+     "id": "osm:way/1449301293",
+     "name": "Bambino",
+     "category": "ice_cream"
+    },
+    {
+     "id": "osm:way/1449317872",
+     "name": "Movenpick",
+     "category": "ice_cream"
+    },
+    {
+     "id": "osm:way/1449322354",
+     "name": "Fame City",
+     "category": "theme_park"
+    },
+    {
+     "id": "osm:way/1504543670",
+     "name": "Детская площадка (без названия в OSM)",
+     "category": "playground"
+    },
+    {
+     "id": "osm:node/2388707906",
+     "name": "Астана-Экспо КС",
+     "category": "gallery"
+    }
+   ],
+   "plan": [
+    {
+     "id": "osm:way/1449322354",
+     "category": "theme_park"
+    }
+   ],
+   "hit5_category": true,
+   "violations": [],
+   "model_tokens": {
+    "prompt": 1431,
+    "output": 179,
+    "done_reason": "stop"
+   },
+   "model_items_rejected": 0,
+   "model_items_accepted": 1,
+   "error": null,
+   "repair_attempts": 0,
+   "removed_claims": 0,
+   "wrong_language": 0,
+   "timings_ms": {
+    "retrieval": 6.5,
+    "generation": 7530.0,
+    "planning": 183.6
+   },
+   "retrieval_mode": "lexical",
+   "samples": [
+    {
+     "names": {
+      "kk": "Fame City [original]",
+      "ru": "Fame City [original]",
+      "en": "Fame City [original]"
+     },
+     "category": "theme_park",
+     "text_source": "ai",
+     "why": "Балалар алаңына ұсынылған, баламен бірге ойнап өтуге тиімді",
+     "activity": "Ойын-сауық паркінде ойындарды ойнап өтіңіз",
+     "warnings": []
+    }
+   ],
+   "names_all_langs": true
+  }
+ ]
+}

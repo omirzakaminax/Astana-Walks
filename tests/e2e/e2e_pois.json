@@ -1,0 +1,882 @@
+{
+ "meta": {
+  "title": "SYNTHETIC E2E DATA — NOT REAL",
+  "is_synthetic": true,
+  "collected_at": "2026-10-19T00:00:00+00:00",
+  "center": {
+   "lat": 51.089,
+   "lon": 71.416
+  }
+ },
+ "pois": [
+  {
+   "id": "syn:1",
+   "name": "Synthetic cafe 1",
+   "name_is_generated": false,
+   "names": {},
+   "lat": 51.091,
+   "lon": 71.416,
+   "category": "cafe",
+   "osm_tags": {},
+   "opening_hours": "24/7",
+   "contacts": {},
+   "description": "",
+   "description_source": "summary_of_osm_tags",
+   "collected_at": "2026-10-19T00:00:00+00:00",
+   "source_url": "https://www.openstreetmap.org/node/1",
+   "notable": false,
+   "media": {
+    "photo": {
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Synthetic_0.jpg/640px-Synthetic_0.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Synthetic_0.jpg",
+     "author": "Test <b>Author</b>",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "summary": {
+     "ru": {
+      "text": "СИНТЕТИЧЕСКОЕ описание для теста <i>не настоящее</i>.",
+      "source": "Wikipedia",
+      "url": "https://ru.wikipedia.org/wiki/Test"
+     },
+     "en": {
+      "text": "SYNTHETIC test description, not real.",
+      "source": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q1"
+     }
+    }
+   }
+  },
+  {
+   "id": "syn:2",
+   "name": "Synthetic cafe 2",
+   "name_is_generated": false,
+   "names": {},
+   "lat": 51.093,
+   "lon": 71.42,
+   "category": "cafe",
+   "osm_tags": {},
+   "opening_hours": "Mo-Su 09:00-21:00",
+   "contacts": {},
+   "description": "",
+   "description_source": "summary_of_osm_tags",
+   "collected_at": "2026-10-19T00:00:00+00:00",
+   "source_url": "https://www.openstreetmap.org/node/2",
+   "notable": false,
+   "media": {
+    "photo": {
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Synthetic_1.jpg/640px-Synthetic_1.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Synthetic_1.jpg",
+     "author": "Test <b>Author</b>",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "summary": {
+     "ru": {
+      "text": "СИНТЕТИЧЕСКОЕ описание для теста <i>не настоящее</i>.",
+      "source": "Wikipedia",
+      "url": "https://ru.wikipedia.org/wiki/Test"
+     },
+     "en": {
+      "text": "SYNTHETIC test description, not real.",
+      "source": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q1"
+     }
+    }
+   }
+  },
+  {
+   "id": "syn:3",
+   "name": "Synthetic park 3",
+   "name_is_generated": false,
+   "names": {},
+   "lat": 51.086,
+   "lon": 71.418,
+   "category": "park",
+   "osm_tags": {},
+   "opening_hours": null,
+   "contacts": {},
+   "description": "",
+   "description_source": "summary_of_osm_tags",
+   "collected_at": "2026-10-19T00:00:00+00:00",
+   "source_url": "https://www.openstreetmap.org/node/3",
+   "notable": false,
+   "media": {
+    "photo": {
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Synthetic_2.jpg/640px-Synthetic_2.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Synthetic_2.jpg",
+     "author": "Test <b>Author</b>",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "summary": {
+     "ru": {
+      "text": "СИНТЕТИЧЕСКОЕ описание для теста <i>не настоящее</i>.",
+      "source": "Wikipedia",
+      "url": "https://ru.wikipedia.org/wiki/Test"
+     },
+     "en": {
+      "text": "SYNTHETIC test description, not real.",
+      "source": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q1"
+     }
+    }
+   }
+  },
+  {
+   "id": "syn:4",
+   "name": "Synthetic park 4",
+   "name_is_generated": false,
+   "names": {},
+   "lat": 51.083,
+   "lon": 71.412,
+   "category": "park",
+   "osm_tags": {},
+   "opening_hours": null,
+   "contacts": {},
+   "description": "",
+   "description_source": "summary_of_osm_tags",
+   "collected_at": "2026-10-19T00:00:00+00:00",
+   "source_url": "https://www.openstreetmap.org/node/4",
+   "notable": false,
+   "media": {
+    "photo": {
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Synthetic_3.jpg/640px-Synthetic_3.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Synthetic_3.jpg",
+     "author": "Test <b>Author</b>",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "summary": {
+     "ru": {
+      "text": "СИНТЕТИЧЕСКОЕ описание для теста <i>не настоящее</i>.",
+      "source": "Wikipedia",
+      "url": "https://ru.wikipedia.org/wiki/Test"
+     },
+     "en": {
+      "text": "SYNTHETIC test description, not real.",
+      "source": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q1"
+     }
+    }
+   }
+  },
+  {
+   "id": "syn:5",
+   "name": "Synthetic playground 5",
+   "name_is_generated": false,
+   "names": {},
+   "lat": 51.087,
+   "lon": 71.413,
+   "category": "playground",
+   "osm_tags": {},
+   "opening_hours": null,
+   "contacts": {},
+   "description": "",
+   "description_source": "summary_of_osm_tags",
+   "collected_at": "2026-10-19T00:00:00+00:00",
+   "source_url": "https://www.openstreetmap.org/node/5",
+   "notable": false,
+   "media": {
+    "photo": {
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Synthetic_4.jpg/640px-Synthetic_4.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Synthetic_4.jpg",
+     "author": "Test <b>Author</b>",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "summary": {
+     "ru": {
+      "text": "СИНТЕТИЧЕСКОЕ описание для теста <i>не настоящее</i>.",
+      "source": "Wikipedia",
+      "url": "https://ru.wikipedia.org/wiki/Test"
+     },
+     "en": {
+      "text": "SYNTHETIC test description, not real.",
+      "source": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q1"
+     }
+    }
+   }
+  },
+  {
+   "id": "syn:6",
+   "name": "Synthetic museum 6",
+   "name_is_generated": false,
+   "names": {},
+   "lat": 51.095,
+   "lon": 71.412,
+   "category": "museum",
+   "osm_tags": {},
+   "opening_hours": "Tu-Su 10:00-18:00; Mo off",
+   "contacts": {},
+   "description": "",
+   "description_source": "summary_of_osm_tags",
+   "collected_at": "2026-10-19T00:00:00+00:00",
+   "source_url": "https://www.openstreetmap.org/node/6",
+   "notable": false,
+   "media": {
+    "photo": {
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Synthetic_5.jpg/640px-Synthetic_5.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Synthetic_5.jpg",
+     "author": "Test <b>Author</b>",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "summary": {
+     "ru": {
+      "text": "СИНТЕТИЧЕСКОЕ описание для теста <i>не настоящее</i>.",
+      "source": "Wikipedia",
+      "url": "https://ru.wikipedia.org/wiki/Test"
+     },
+     "en": {
+      "text": "SYNTHETIC test description, not real.",
+      "source": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q1"
+     }
+    }
+   }
+  },
+  {
+   "id": "syn:7",
+   "name": "Synthetic viewpoint 7",
+   "name_is_generated": false,
+   "names": {},
+   "lat": 51.09,
+   "lon": 71.422,
+   "category": "viewpoint",
+   "osm_tags": {},
+   "opening_hours": null,
+   "contacts": {},
+   "description": "",
+   "description_source": "summary_of_osm_tags",
+   "collected_at": "2026-10-19T00:00:00+00:00",
+   "source_url": "https://www.openstreetmap.org/node/7",
+   "notable": false,
+   "media": {
+    "photo": {
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Synthetic_6.jpg/640px-Synthetic_6.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Synthetic_6.jpg",
+     "author": "Test <b>Author</b>",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "summary": {
+     "ru": {
+      "text": "СИНТЕТИЧЕСКОЕ описание для теста <i>не настоящее</i>.",
+      "source": "Wikipedia",
+      "url": "https://ru.wikipedia.org/wiki/Test"
+     },
+     "en": {
+      "text": "SYNTHETIC test description, not real.",
+      "source": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q1"
+     }
+    }
+   }
+  },
+  {
+   "id": "syn:8",
+   "name": "Synthetic artwork 8",
+   "name_is_generated": false,
+   "names": {},
+   "lat": 51.088,
+   "lon": 71.42,
+   "category": "artwork",
+   "osm_tags": {},
+   "opening_hours": null,
+   "contacts": {},
+   "description": "",
+   "description_source": "summary_of_osm_tags",
+   "collected_at": "2026-10-19T00:00:00+00:00",
+   "source_url": "https://www.openstreetmap.org/node/8",
+   "notable": false,
+   "media": {
+    "photo": {
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Synthetic_7.jpg/640px-Synthetic_7.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Synthetic_7.jpg",
+     "author": "Test <b>Author</b>",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "summary": {
+     "ru": {
+      "text": "СИНТЕТИЧЕСКОЕ описание для теста <i>не настоящее</i>.",
+      "source": "Wikipedia",
+      "url": "https://ru.wikipedia.org/wiki/Test"
+     },
+     "en": {
+      "text": "SYNTHETIC test description, not real.",
+      "source": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q1"
+     }
+    }
+   }
+  },
+  {
+   "id": "syn:9",
+   "name": "Synthetic mall 9",
+   "name_is_generated": false,
+   "names": {},
+   "lat": 51.082,
+   "lon": 71.41,
+   "category": "mall",
+   "osm_tags": {
+    "building": "yes"
+   },
+   "opening_hours": "Mo-Su 10:00-22:00",
+   "contacts": {},
+   "description": "",
+   "description_source": "summary_of_osm_tags",
+   "collected_at": "2026-10-19T00:00:00+00:00",
+   "source_url": "https://www.openstreetmap.org/node/9",
+   "notable": false,
+   "media": {
+    "photo": {
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Synthetic_8.jpg/640px-Synthetic_8.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Synthetic_8.jpg",
+     "author": "Test <b>Author</b>",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "summary": {
+     "ru": {
+      "text": "СИНТЕТИЧЕСКОЕ описание для теста <i>не настоящее</i>.",
+      "source": "Wikipedia",
+      "url": "https://ru.wikipedia.org/wiki/Test"
+     },
+     "en": {
+      "text": "SYNTHETIC test description, not real.",
+      "source": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q1"
+     }
+    }
+   }
+  },
+  {
+   "id": "syn:10",
+   "name": "Synthetic cafe 10",
+   "name_is_generated": false,
+   "names": {},
+   "lat": 51.0895,
+   "lon": 71.4165,
+   "category": "cafe",
+   "osm_tags": {},
+   "opening_hours": "Mo-Su 14:40-23:00",
+   "contacts": {},
+   "description": "",
+   "description_source": "summary_of_osm_tags",
+   "collected_at": "2026-10-19T00:00:00+00:00",
+   "source_url": "https://www.openstreetmap.org/node/10",
+   "notable": false,
+   "media": {
+    "photo": {
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Synthetic_9.jpg/640px-Synthetic_9.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Synthetic_9.jpg",
+     "author": "Test <b>Author</b>",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "summary": {
+     "ru": {
+      "text": "СИНТЕТИЧЕСКОЕ описание для теста <i>не настоящее</i>.",
+      "source": "Wikipedia",
+      "url": "https://ru.wikipedia.org/wiki/Test"
+     },
+     "en": {
+      "text": "SYNTHETIC test description, not real.",
+      "source": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q1"
+     }
+    }
+   }
+  },
+  {
+   "id": "syn:11",
+   "name": "Synthetic cafe 11",
+   "name_is_generated": false,
+   "names": {},
+   "lat": 51.0894,
+   "lon": 71.4156,
+   "category": "cafe",
+   "osm_tags": {},
+   "opening_hours": "Mo-Su 08:00-14:35",
+   "contacts": {},
+   "description": "",
+   "description_source": "summary_of_osm_tags",
+   "collected_at": "2026-10-19T00:00:00+00:00",
+   "source_url": "https://www.openstreetmap.org/node/11",
+   "notable": false,
+   "media": {
+    "photo": {
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Synthetic_10.jpg/640px-Synthetic_10.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Synthetic_10.jpg",
+     "author": "Test <b>Author</b>",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "summary": {
+     "ru": {
+      "text": "СИНТЕТИЧЕСКОЕ описание для теста <i>не настоящее</i>.",
+      "source": "Wikipedia",
+      "url": "https://ru.wikipedia.org/wiki/Test"
+     },
+     "en": {
+      "text": "SYNTHETIC test description, not real.",
+      "source": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q1"
+     }
+    }
+   }
+  },
+  {
+   "id": "syn:12",
+   "name": "Synthetic park 12",
+   "name_is_generated": false,
+   "names": {},
+   "lat": 51.119,
+   "lon": 71.416,
+   "category": "park",
+   "osm_tags": {},
+   "opening_hours": null,
+   "contacts": {},
+   "description": "",
+   "description_source": "summary_of_osm_tags",
+   "collected_at": "2026-10-19T00:00:00+00:00",
+   "source_url": "https://www.openstreetmap.org/node/12",
+   "notable": false,
+   "media": {
+    "photo": {
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Synthetic_11.jpg/640px-Synthetic_11.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Synthetic_11.jpg",
+     "author": "Test <b>Author</b>",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "summary": {
+     "ru": {
+      "text": "СИНТЕТИЧЕСКОЕ описание для теста <i>не настоящее</i>.",
+      "source": "Wikipedia",
+      "url": "https://ru.wikipedia.org/wiki/Test"
+     },
+     "en": {
+      "text": "SYNTHETIC test description, not real.",
+      "source": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q1"
+     }
+    }
+   }
+  },
+  {
+   "id": "syn:200",
+   "name": "Мега Силк Вей",
+   "name_is_generated": false,
+   "names": {},
+   "lat": 51.0845,
+   "lon": 71.421,
+   "category": "mall",
+   "osm_tags": {
+    "shop": "mall",
+    "building": "yes",
+    "name:en": "Mega Silk Way"
+   },
+   "opening_hours": "Mo-Su 10:00-22:00",
+   "contacts": {},
+   "description": "",
+   "description_source": "summary_of_osm_tags",
+   "collected_at": "2026-10-19T00:00:00+00:00",
+   "source_url": "https://www.openstreetmap.org/node/200",
+   "notable": true,
+   "media": {
+    "photo": {
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Synthetic_12.jpg/640px-Synthetic_12.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Synthetic_12.jpg",
+     "author": "Test <b>Author</b>",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "summary": {
+     "ru": {
+      "text": "СИНТЕТИЧЕСКОЕ описание для теста <i>не настоящее</i>.",
+      "source": "Wikipedia",
+      "url": "https://ru.wikipedia.org/wiki/Test"
+     },
+     "en": {
+      "text": "SYNTHETIC test description, not real.",
+      "source": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q1"
+     }
+    }
+   }
+  },
+  {
+   "id": "syn:201",
+   "name": "Mega Silk Way",
+   "name_is_generated": false,
+   "names": {},
+   "lat": 51.0848,
+   "lon": 71.4222,
+   "category": "mall",
+   "osm_tags": {
+    "shop": "mall"
+   },
+   "opening_hours": "Mo-Su 10:00-22:00",
+   "contacts": {},
+   "description": "",
+   "description_source": "summary_of_osm_tags",
+   "collected_at": "2026-10-19T00:00:00+00:00",
+   "source_url": "https://www.openstreetmap.org/node/201",
+   "notable": false,
+   "media": {
+    "photo": {
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Synthetic_13.jpg/640px-Synthetic_13.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Synthetic_13.jpg",
+     "author": "Test <b>Author</b>",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "summary": {
+     "ru": {
+      "text": "СИНТЕТИЧЕСКОЕ описание для теста <i>не настоящее</i>.",
+      "source": "Wikipedia",
+      "url": "https://ru.wikipedia.org/wiki/Test"
+     },
+     "en": {
+      "text": "SYNTHETIC test description, not real.",
+      "source": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q1"
+     }
+    }
+   }
+  },
+  {
+   "id": "syn:202",
+   "name": "Хан Шатыр",
+   "name_is_generated": false,
+   "names": {},
+   "lat": 51.0925,
+   "lon": 71.414,
+   "category": "attraction",
+   "osm_tags": {
+    "tourism": "attraction",
+    "wikidata": "Q1"
+   },
+   "opening_hours": null,
+   "contacts": {},
+   "description": "",
+   "description_source": "summary_of_osm_tags",
+   "collected_at": "2026-10-19T00:00:00+00:00",
+   "source_url": "https://www.openstreetmap.org/node/202",
+   "notable": true,
+   "media": {
+    "photo": {
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Synthetic_14.jpg/640px-Synthetic_14.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Synthetic_14.jpg",
+     "author": "Test <b>Author</b>",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "summary": {
+     "ru": {
+      "text": "СИНТЕТИЧЕСКОЕ описание для теста <i>не настоящее</i>.",
+      "source": "Wikipedia",
+      "url": "https://ru.wikipedia.org/wiki/Test"
+     },
+     "en": {
+      "text": "SYNTHETIC test description, not real.",
+      "source": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q1"
+     }
+    }
+   }
+  },
+  {
+   "id": "syn:203",
+   "name": "Khan Shatyr",
+   "name_is_generated": false,
+   "names": {},
+   "lat": 51.0927,
+   "lon": 71.4142,
+   "category": "attraction",
+   "osm_tags": {
+    "tourism": "attraction"
+   },
+   "opening_hours": null,
+   "contacts": {},
+   "description": "",
+   "description_source": "summary_of_osm_tags",
+   "collected_at": "2026-10-19T00:00:00+00:00",
+   "source_url": "https://www.openstreetmap.org/node/203",
+   "notable": false,
+   "media": {
+    "photo": {
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Synthetic_15.jpg/640px-Synthetic_15.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Synthetic_15.jpg",
+     "author": "Test <b>Author</b>",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "summary": {
+     "ru": {
+      "text": "СИНТЕТИЧЕСКОЕ описание для теста <i>не настоящее</i>.",
+      "source": "Wikipedia",
+      "url": "https://ru.wikipedia.org/wiki/Test"
+     },
+     "en": {
+      "text": "SYNTHETIC test description, not real.",
+      "source": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q1"
+     }
+    }
+   }
+  },
+  {
+   "id": "syn:204",
+   "name": "Кофе Бум",
+   "name_is_generated": false,
+   "names": {},
+   "lat": 51.0902,
+   "lon": 71.4182,
+   "category": "cafe",
+   "osm_tags": {
+    "amenity": "cafe"
+   },
+   "opening_hours": "Mo-Su 08:00-23:00",
+   "contacts": {},
+   "description": "",
+   "description_source": "summary_of_osm_tags",
+   "collected_at": "2026-10-19T00:00:00+00:00",
+   "source_url": "https://www.openstreetmap.org/node/204",
+   "notable": false,
+   "media": {
+    "photo": {
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Synthetic_16.jpg/640px-Synthetic_16.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Synthetic_16.jpg",
+     "author": "Test <b>Author</b>",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "summary": {
+     "ru": {
+      "text": "СИНТЕТИЧЕСКОЕ описание для теста <i>не настоящее</i>.",
+      "source": "Wikipedia",
+      "url": "https://ru.wikipedia.org/wiki/Test"
+     },
+     "en": {
+      "text": "SYNTHETIC test description, not real.",
+      "source": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q1"
+     }
+    }
+   }
+  },
+  {
+   "id": "syn:205",
+   "name": "«Астана Жұлдызы» ескерткіші",
+   "name_is_generated": false,
+   "names": {},
+   "lat": 51.0875,
+   "lon": 71.4148,
+   "category": "artwork",
+   "osm_tags": {
+    "tourism": "artwork"
+   },
+   "opening_hours": null,
+   "contacts": {},
+   "description": "",
+   "description_source": "summary_of_osm_tags",
+   "collected_at": "2026-10-19T00:00:00+00:00",
+   "source_url": "https://www.openstreetmap.org/node/205",
+   "notable": false,
+   "media": {
+    "photo": {
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Synthetic_17.jpg/640px-Synthetic_17.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Synthetic_17.jpg",
+     "author": "Test <b>Author</b>",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "summary": {
+     "ru": {
+      "text": "СИНТЕТИЧЕСКОЕ описание для теста <i>не настоящее</i>.",
+      "source": "Wikipedia",
+      "url": "https://ru.wikipedia.org/wiki/Test"
+     },
+     "en": {
+      "text": "SYNTHETIC test description, not real.",
+      "source": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q1"
+     }
+    }
+   }
+  },
+  {
+   "id": "syn:206",
+   "name": "EXPO <b>Sphere</b>",
+   "name_is_generated": false,
+   "names": {},
+   "lat": 51.0895,
+   "lon": 71.4195,
+   "category": "attraction",
+   "osm_tags": {
+    "tourism": "attraction"
+   },
+   "opening_hours": null,
+   "contacts": {},
+   "description": "",
+   "description_source": "summary_of_osm_tags",
+   "collected_at": "2026-10-19T00:00:00+00:00",
+   "source_url": "https://www.openstreetmap.org/node/206",
+   "notable": false,
+   "media": {
+    "photo": {
+     "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Synthetic_18.jpg/640px-Synthetic_18.jpg",
+     "page": "https://commons.wikimedia.org/wiki/File:Synthetic_18.jpg",
+     "author": "Test <b>Author</b>",
+     "license": "CC BY-SA 4.0",
+     "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "summary": {
+     "ru": {
+      "text": "СИНТЕТИЧЕСКОЕ описание для теста <i>не настоящее</i>.",
+      "source": "Wikipedia",
+      "url": "https://ru.wikipedia.org/wiki/Test"
+     },
+     "en": {
+      "text": "SYNTHETIC test description, not real.",
+      "source": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q1"
+     }
+    }
+   }
+  },
+  {
+   "id": "syn:207",
+   "source": "SYNTHETIC",
+   "source_url": "https://www.openstreetmap.org/node/207",
+   "name": "Атырау көпірі",
+   "name_is_generated": false,
+   "names": {},
+   "lat": 51.0905,
+   "lon": 71.4128,
+   "category": "attraction",
+   "osm_tags": {
+    "man_made": "bridge",
+    "name:kk": "Атырау көпірі"
+   },
+   "opening_hours": null,
+   "contacts": {},
+   "description": "",
+   "description_source": "summary_of_osm_tags",
+   "notable": false,
+   "collected_at": "2026-10-19T00:00:00+00:00"
+  },
+  {
+   "id": "syn:208",
+   "source": "SYNTHETIC",
+   "source_url": "https://www.openstreetmap.org/node/208",
+   "name": "Инжіл-лютеран шіркеуі",
+   "name_is_generated": false,
+   "names": {},
+   "lat": 51.0918,
+   "lon": 71.418,
+   "category": "worship",
+   "osm_tags": {
+    "amenity": "place_of_worship",
+    "name:ru": "Евангелическо-лютеранская церковь (синтетика)"
+   },
+   "opening_hours": null,
+   "contacts": {},
+   "description": "",
+   "description_source": "summary_of_osm_tags",
+   "notable": false,
+   "collected_at": "2026-10-19T00:00:00+00:00"
+  },
+  {
+   "id": "syn:209",
+   "source": "SYNTHETIC",
+   "source_url": "https://www.openstreetmap.org/node/209",
+   "name": "А. С. Пушкину",
+   "name_is_generated": false,
+   "names": {},
+   "lat": 51.0878,
+   "lon": 71.4172,
+   "category": "artwork",
+   "osm_tags": {
+    "historic": "memorial"
+   },
+   "opening_hours": null,
+   "contacts": {},
+   "description": "",
+   "description_source": "summary_of_osm_tags",
+   "notable": false,
+   "collected_at": "2026-10-19T00:00:00+00:00"
+  },
+  {
+   "id": "syn:210",
+   "source": "SYNTHETIC",
+   "source_url": "https://www.openstreetmap.org/node/210",
+   "name": "Coffee Boom",
+   "name_is_generated": false,
+   "names": {},
+   "lat": 51.0908,
+   "lon": 71.415,
+   "category": "cafe",
+   "osm_tags": {
+    "amenity": "cafe",
+    "brand": "Coffee Boom",
+    "addr:housenumber": "10"
+   },
+   "opening_hours": "Mo-Su 08:00-23:00",
+   "contacts": {},
+   "description": "",
+   "description_source": "summary_of_osm_tags",
+   "notable": false,
+   "collected_at": "2026-10-19T00:00:00+00:00"
+  },
+  {
+   "id": "syn:211",
+   "source": "SYNTHETIC",
+   "source_url": "https://www.openstreetmap.org/node/211",
+   "name": "Coffee Boom",
+   "name_is_generated": false,
+   "names": {},
+   "lat": 51.0912,
+   "lon": 71.4158,
+   "category": "cafe",
+   "osm_tags": {
+    "amenity": "cafe",
+    "brand": "Coffee Boom",
+    "addr:housenumber": "24"
+   },
+   "opening_hours": "Mo-Su 08:00-23:00",
+   "contacts": {},
+   "description": "",
+   "description_source": "summary_of_osm_tags",
+   "notable": false,
+   "collected_at": "2026-10-19T00:00:00+00:00"
+  },
+  {
+   "id": "syn:212",
+   "source": "SYNTHETIC",
+   "source_url": "https://www.openstreetmap.org/node/212",
+   "name": "Бәйтерек",
+   "name_is_generated": false,
+   "names": {},
+   "lat": 51.1283,
+   "lon": 71.4305,
+   "category": "attraction",
+   "osm_tags": {
+    "tourism": "attraction",
+    "name:en": "Baiterek",
+    "name:ru": "Байтерек"
+   },
+   "opening_hours": null,
+   "contacts": {},
+   "description": "",
+   "description_source": "summary_of_osm_tags",
+   "notable": false,
+   "collected_at": "2026-10-19T00:00:00+00:00"
+  }
+ ]
+}
