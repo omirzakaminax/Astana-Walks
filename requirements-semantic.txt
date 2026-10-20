@@ -1,0 +1,6 @@
+# OPTIONAL: local multilingual semantic retrieval (RETRIEVAL_MODE=hybrid). The base app does not need it.
+# CPU-only PyTorch keeps the download smaller on Windows:
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+#   pip install -r requirements-semantic.txt
+# The model (intfloat/multilingual-e5-small, ~470 MB) downloads from Hugging Face on first use.
+sentence-transformers>=3.0,<6

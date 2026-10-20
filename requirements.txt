@@ -1,0 +1,5 @@
+# Python 3.10–3.13. The web server uses only the standard library.
+requests>=2.31,<3
+
+# Optional, for running the tests with pytest (unittest works without it):
+pytest>=8,<9
